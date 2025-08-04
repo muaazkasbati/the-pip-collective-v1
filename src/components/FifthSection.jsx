@@ -166,10 +166,10 @@ export default function FifthSection() {
         className=""
       >
         <div className='px-[20px] lg:px-[90px]'>
-          <h2 className="text-4xl md:text-[54px] font-bold text-white">
+          <h2 className="text-2xl sm:text-4xl md:text-[54px] font-bold text-white">
             Trusted By Traders Worldwide.
           </h2>
-          <h3 className="text-4xl md:text-[36px] leading-12 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent bg-clip-text text-transparent ">
+          <h3 className="text-xl sm:text-4xl md:text-[36px] sm:leading-16 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent bg-clip-text text-transparent ">
             Real Edge. No BS. Just Trades That Work.
           </h3>
           <p className='text-white text-base sm:text-lg mb-10'>
@@ -215,18 +215,18 @@ export default function FifthSection() {
                 >
                   <SwiperSlide className="swiper-slide testimonial-slide transition-opacity duration-300">
                     <div className="bg-white/10 p-6 sm:p-10 rounded-xl text-left">
-                      <div className="flex items-center mb-4">
-                        <div className="w-12 h-12 rounded-full mr-4 bg-[#A200F5] text-white uppercase text-[20px] font-bold flex items-center justify-center">
+                      <div className="flex sm:gap-4 gap-2 items-center mb-4">
+                        <div className="w-12 h-12 shrink-0 rounded-full bg-[#A200F5] text-white uppercase text-[20px] font-bold flex items-center justify-center">
                           {/* {generateInitials(testimonial.name)} */}
-                          <img src="./images/testi-img.png" className='rounded-full' alt="" />
+                          <img src="./images/testi-img.png" className='rounded-full oject-cover w-full h-full' alt="" />
                         </div>
                         <div>
-                          <h3 className="text-[18px] sm:text-[20px] uppercase font-bold text-white">{testimonial.name}</h3>
+                          <h3 className="text-[16px] sm:text-[20px] uppercase font-bold text-white">{testimonial.name}</h3>
                           <p className="text-[14px] sm:text-[16px] text-white">{testimonial.position}</p>
                         </div>
                       </div>
                       {/* <p className="text-white text-[16px] sm:text-[18px]">{testimonial.text}</p> */}
-                      <div className={`${isExpanded ? "h-28" : "h-24"}`}>
+                      <div className={`${isExpanded ? "sm:h-28" : "sm:h-24"}`}>
                         <h4 className='font-semibold text-[18px] text-[#A200F5] sm:text-[20px]'>Auto Setfile Finder</h4>
                         <p
                           className={`text-white text-[14px] sm:text-[16px] overflow-hidden transition-all duration-300 ${!isExpanded

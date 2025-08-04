@@ -39,11 +39,11 @@ export default function VideoSection() {
                                         alt="Video thumbnail"
                                         className="w-full h-full object-cover"
                                     />
-                                    {/* <img
+                                    <img
                                         src="/images/play-button.png"
                                         alt="Play"
-                                        className="absolute z-10 left-0 right-0 mx-auto block top-1/3 w-[50px] md:w-[80px] cursor-pointer"
-                                    /> */}
+                                        className="absolute  z-10 left-0 right-0 mx-auto block top-1/3 w-[50px] md:w-[80px] cursor-pointer"
+                                    />
                                     {/* <div className="w-full h-[100px] md:h-[180px] absolute top-0 bg-gradient-to-b from-black to-transparent"></div>
                                     <div className="w-full h-[100px] md:h-[180px] absolute bottom-0 bg-gradient-to-b to-black from-transparent"></div> */}
                                     <div className="h-full w-[100px] md:w-[180px] absolute top-0 bg-gradient-to-r from-[#121212] to-transparent"></div>

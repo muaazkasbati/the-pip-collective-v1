@@ -79,7 +79,7 @@ function FAQItem({ question, answer, index }) {
       >
         <span className="text-[18px] md:text-[24px] font-normal">{question}</span>
         <span
-          className="w-9 h-9 md:w-10 md:h-10 rounded-full border border-white/10 text-[15px] flex justify-center items-center"
+          className="w-9 h-9 md:w-10 md:h-10 shrink-0 rounded-full border border-white/10 text-[15px] flex justify-center items-center"
           style={{ lineHeight: 0 }}
         >
           {isOpen ? (

@@ -59,13 +59,21 @@ export default function SecondSection() {
                 </motion.h2>
 
                 <motion.div className="relative">
-                    <div className="flex flex-col md:flex-row items-center gap-6 md:mb-0 ">
+                    <div className="flex flex-col lg:flex-row items-center gap-6 md:mb-0 ">
                         {/* Left Side (Arrow image) */}
-                        <div className="md:w-2/5 w-full flex justify-center">
+                        <div className="lg:w-2/5 w-full flex justify-center">
+                            <motion.img
+                                src="/images/arrow-img.png"
+                                alt=""
+                                initial={{ opacity: 0, x: -50 }}
+                                animate={{ opacity: 0.5, x: 0 }}
+                                transition={{ delay: 1, duration: 1 }}
+                                className=" lg:hidden block z-10 md:w-150 w-70"
+                            />
                         </div>
 
                         {/* Right Side (Boxes grid) */}
-                        <div className="md:w-3/5 w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div className="lg:w-3/5 w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {strategies.map((item, idx) => (
                                 <div
                                     key={idx}
@@ -112,7 +120,7 @@ export default function SecondSection() {
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 0.5, x: 0 }}
                 transition={{ delay: 1, duration: 1 }}
-                className="absolute md:bottom-0 sm:bottom-55 bottom-150 md:left-0 sm:left-30 z-10 md:w-150 w-70"
+                className="absolute lg:block hidden md:bottom-0 sm:bottom-55 bottom-150 md:left-0 sm:left-30 z-10 md:w-150 w-70"
             />
             <motion.img
                 src="/images/most-ease-bg-2.png"

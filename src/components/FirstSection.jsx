@@ -35,7 +35,7 @@ export default function FirstSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-3xl md:text-[70px] leading-15 font-medium mb-4"
+              className="text-[30px] sm:text-[36px] lg:text-[70px] sm:leading-15 font-medium sm:mb-4"
             >
               Trade Like a Hedge Fund
             </motion.h1>
@@ -44,23 +44,23 @@ export default function FirstSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-xl sm:text-3xl md:text-[45px] leading-snug font-light mb-6 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent"
+              className="text-xl sm:text-3xl md:text-[45px] leading-snug font-light md:mb-6 mb-4 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent"
             >
               Powered by Proprietary Quant Logic
-              – <br /> The Same Logic Hedge Funds Use
+              – <br className='sm:block hidden' /> The Same Logic Hedge Funds Use
             </motion.h2>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="text-[18px] md:text-[22px] font-light mb-8 leading-8"
+              className="text-[16px] md:text-[22px] font-light mb-8 md:leading-8"
               style={{ color: "#BABABA" }}
             >
               No martingale. No grid. No ridiculous drawdowns.
 
               No BS.
-              <br />
+              <br className='sm:block hidden' />
               Just simple, automated trading – built for live accounts & prop firm success.
             </motion.p>
 
@@ -87,7 +87,7 @@ export default function FirstSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1, duration: 1 }}
-            className="h-[300px] md:hidden block mx-auto"
+            className="h-[300px] hidden  mx-auto"
           />
         </motion.div>
 
@@ -113,7 +113,7 @@ export default function FirstSection() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 1, duration: 1 }}
-          className="absolute top-3 right-9 h-[500px] md:block hidden"
+          className="absolute top-3 right-4 sm:right-9 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] block"
         />
         <div className="relative py-12 mt-16 sm:mt-24">
           <motion.div
@@ -147,7 +147,7 @@ export default function FirstSection() {
             initial={{ filter: 'drop-shadow(0 -60px 20px #A200F5)', opacity: 0.3 }}
             animate={{ filter: 'drop-shadow(0 -30px 10px #A200F5)', opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeOut' }}
-            className="w-full object-cover absolute sm:block hidden sm:bottom-[190px] md:bottom-[180px] lg:bottom-[120px] xl:bottom-[90px] 2xl:bottom-10"
+            className="w-full object-cover absolute glowBgImg"
           >
             {/* <div className='w-full'>
               <img src="./images/banner-bg-3.png" alt="" className='w-full' />

@@ -86,7 +86,7 @@ export default function FourthSection() {
     <section
       ref={ref}
       id="expectations"
-      className="relative"
+      className="relative overflow-hidden"
     >
       <div className="py-16 px-4 max-w-6xl mx-auto md:overflow-visible overflow-hidden">
         <motion.h2

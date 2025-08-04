@@ -124,3 +124,24 @@ body {
     rgba(4, 154, 203, 1) 100%
   ) !important;
 }
+
+.glowBgImg {
+  top: -60px;
+}
+
+@media screen and (max-width: 767px) {
+  .glowBgImg {
+    top: -20px;
+  }
+}
+@media screen and (max-width: 575) {
+  .glowBgImg {
+    top: 0px;
+  }
+  .customMarginLeft{
+    margin-left: 15px;
+  }
+  .customMarginBottom{
+    margin-bottom: 10px;
+  }
+}

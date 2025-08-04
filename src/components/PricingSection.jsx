@@ -114,7 +114,7 @@ export default function PricingSection() {
   const toggleTooltip = () => setIsOpen(prev => !prev);
 
   return (
-    <section id="pricing" className="py-16 px-4">
+    <section id="pricing" className="py-16 px-4 overflow-hidden">
       <motion.div
         ref={ref}
         variants={fadeUp}
@@ -131,7 +131,7 @@ export default function PricingSection() {
               src="/images/info-icon.png"
               alt=""
               onClick={toggleTooltip}
-              className="cursor-pointer  w-[30px] h-[30px] min-w-[30px]"
+              className="cursor-pointer w-[30px] h-[30px] min-w-[30px] customMarginLeft customMarginBottom"
             />
             <div
               className={`
@@ -150,7 +150,7 @@ export default function PricingSection() {
               </p>
             </div>
           </div>
-          <p className="text-sm md:text-2xl sm:px-0 px-4 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent mb-8">
+          <p className="text-sm md:text-2xl sm:px-0 px-4  bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent mb-8">
             All plans include full access to the EA (including future updates),
             ready to trade setfiles, settle finder, dashboard tools & 24/7
             support.
@@ -190,7 +190,7 @@ export default function PricingSection() {
 
         {tab !== "paid" && (
           <>
-            <h2 className="text-xl md:text-4xl sm:leading-12 capitalize font-bold mb-4">The Broker sign-up plan requires you to create and fund a LIVE <br /> account with One Of our partnered brokers</h2>
+            <h2 className="text-[16px] md:text-4xl sm:leading-12 capitalize font-bold mb-4 sm:px-0 px-4">The Broker sign-up plan requires you to create and fund a LIVE <br className="sm:block hidden" /> account with One Of our partnered brokers</h2>
             <motion.div
               variants={fadeUp}
               initial="hidden"

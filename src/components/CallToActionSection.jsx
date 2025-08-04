@@ -42,11 +42,19 @@ export default function CallToActionSection() {
             <Button link href="#" className='primaryBtn'>Join Us For Free</Button>
           </motion.div>
         </motion.div>
-        <img
+        <motion.img
+          initial={{ opacity: 0, y: 100 }} // Start from bottom
+          animate={{ opacity: 1, y: 0 }}   // Animate to original position
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className='w-full'
           src="/images/shadow-img-3.png"
           alt=""
-          className="w-full"
         />
+        {/* <img
+        src="/images/shadow-img-3.png"
+          alt=""
+          className="w-full"
+        /> */}
       </div>
     </section>
   );

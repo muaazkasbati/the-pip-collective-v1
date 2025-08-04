@@ -44,6 +44,11 @@ export default function WelcomAbroad2() {
                                         alt="Video thumbnail"
                                         className="w-full h-full object-cover"
                                     />
+                                    <img
+                                        src="/images/play-button.png"
+                                        alt="Play"
+                                        className="absolute  z-10 left-0 right-0 mx-auto block top-1/3 w-[50px] md:w-[80px] cursor-pointer"
+                                    />
                                     <div className="h-full w-[100px] md:w-[180px] absolute top-0 bg-gradient-to-r from-[#121212] to-transparent"></div>
                                     <div className="h-full w-[100px] md:w-[180px] absolute top-0 right-0 bg-gradient-to-l from-[#121212] to-transparent"></div>
                                     <div className="w-full h-[100px] md:h-[180px] absolute top-0 bg-gradient-to-b from-[#121212] to-transparent"></div>
