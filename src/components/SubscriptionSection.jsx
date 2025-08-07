@@ -65,7 +65,7 @@ export default function SubscriptionSection() {
             }}
           >
             <div className='flex sm:flex-row flex-col items-center gap-2'>
-              <label htmlFor="name" className="block text-white text-[16px] mb-1">
+              <label htmlFor="name" className="md:text-center text-left block text-white text-[16px] mb-1">
                 Name:
               </label>
               <input
@@ -76,7 +76,7 @@ export default function SubscriptionSection() {
               />
             </div>
             <div className='flex sm:flex-row flex-col items-center gap-2'>
-              <label htmlFor="email" className="block text-white text-[16px] mb-1">
+              <label htmlFor="email" className="md:text-center text-left block text-white text-[16px] mb-1">
                 Email:
               </label>
               <input

@@ -238,7 +238,7 @@ export default function FourthSection() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ delay: 1.0, duration: 0.6 }}
-              className="flex xl:justify-center"
+              className="flex justify-center"
             >
               <Button className="primaryBtn">Unlock Free Lifetime Access</Button>
             </motion.div>
