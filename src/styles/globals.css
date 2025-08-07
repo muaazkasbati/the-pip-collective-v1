@@ -217,9 +217,9 @@ body {
     margin-right: 10px !important;
     /* 👈 spacing kam karne ke liye */
   }
-  .plansOneSlider .swiper-slide:first-child {
+  /* .plansOneSlider .swiper-slide:first-child {
     margin-right: 0px !important;
-  }
+  } */
 
 }
 
@@ -232,9 +232,9 @@ body {
   .plansOneSlider .swiper-slide {
     margin-right: 3px !important;
   }
-   .plansOneSlider .swiper-slide:first-child {
+   /* .plansOneSlider .swiper-slide:first-child {
     margin-right: 0px !important;
-  }
+  } */
 
   .plansOneWrapper {
     padding: 7px !important;
