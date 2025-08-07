@@ -20,7 +20,7 @@ import { fadeUp } from "./SubscriptionSection";
 export default function Footer() {
     return (
         <motion.footer
-            className="pt-12 pb-10 sm:mt-0 mt-10 border-white/5 sm:border-t"
+            className="pt-12 pb-10 sm:mt-0 mt-10 border-white/5 sm:border-t overflow-hidden"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"

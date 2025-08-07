@@ -49,7 +49,7 @@ body {
 }
 
 .primaryBtn {
-  background: linear-gradient(90deg,rgba(171, 0, 212, 1) 0%, rgba(129, 27, 192, 1) 23%, rgba(93, 61, 187, 1) 58%, rgba(4, 154, 203, 1) 100%);
+  background: linear-gradient(90deg, rgba(171, 0, 212, 1) 0%, rgba(129, 27, 192, 1) 23%, rgba(93, 61, 187, 1) 58%, rgba(4, 154, 203, 1) 100%);
   padding: 12px 24px;
   border-radius: 14px;
   border: none;
@@ -112,36 +112,185 @@ body {
 }
 
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background: rgba(255 255 255 / 40%) !important;
 }
+
 .swiper-pagination-bullet-active {
-  background: linear-gradient(
-    90deg,
-    rgba(171, 0, 212, 1) 0%,
-    rgba(129, 27, 192, 1) 23%,
-    rgba(93, 61, 187, 1) 58%,
-    rgba(4, 154, 203, 1) 100%
-  ) !important;
+  background: linear-gradient(90deg,
+      rgba(171, 0, 212, 1) 0%,
+      rgba(129, 27, 192, 1) 23%,
+      rgba(93, 61, 187, 1) 58%,
+      rgba(4, 154, 203, 1) 100%) !important;
 }
 
 .glowBgImg {
   top: -60px;
 }
 
+/* @media screen and (max-width: 1199px) {
+  .plansOneWrapper{
+    padding: 20px !important;
+  }
+  .plansOneWrapper h3, .plansOneWrapper h4{
+    font-size: 14px;
+  }
+} */
 @media screen and (max-width: 767px) {
   .glowBgImg {
     top: -20px;
   }
+  .planFree li{
+    font-size: 10px;
+  }
+  .planFree button{
+    font-size: 9px;
+  }
+  .plansOneSlider .swiper-slide {
+    margin-right: 7px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .plansOneWrapper {
+    padding: 10px !important;
+    border-radius: 8px !important;
+  }
+
+  .plansOneSlider ul {
+    margin-bottom: 5px;
+  }
+
+  .plansOneSlider ul li {
+    font-size: 9px !important;
+    margin-bottom: 4px;
+  }
+
+  .plansOneSlider ul li span svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .plansOneWrapper h3,
+  .plansOneWrapper h4 {
+    font-size: 8px;
+  }
+
+  .plansOneWrapper p {
+    font-size: 9px !important;
+    margin-bottom: 3px !important;
+  }
+
+  .plansOneSlider button {
+    padding: 0px;
+    font-size: 9px;
+  }
 }
+
 @media screen and (max-width: 575) {
   .glowBgImg {
     top: 0px;
   }
-  .customMarginLeft{
+  .tab-button-active , .tab-button-inactive{
+    font-size: 12px;
+  }
+
+  .customMarginLeft {
     margin-left: 15px;
   }
-  .customMarginBottom{
+
+  .customMarginBottom {
     margin-bottom: 10px;
+  }
+
+  .RCloseImg {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .primaryBtn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .testimonial-slider .swiper-slide {
+    margin-right: 10px !important;
+    /* 👈 spacing kam karne ke liye */
+  }
+  .plansOneSlider .swiper-slide:first-child {
+    margin-right: 0px !important;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+    .tab-button-active , .tab-button-inactive{
+    font-size: 10px;
+    /* padding-block: 5px;
+    padding-inline: 5px; */
+  }
+  .plansOneSlider .swiper-slide {
+    margin-right: 3px !important;
+  }
+   .plansOneSlider .swiper-slide:first-child {
+    margin-right: 0px !important;
+  }
+
+  .plansOneWrapper {
+    padding: 7px !important;
+    border-radius: 8px !important;
+  }
+
+  .plansOneSlider ul {
+    margin-bottom: 5px;
+  }
+.plansOneSlider small{
+  font-size: 5px !important;
+}
+  .plansOneSlider ul li {
+    font-size: 6px !important;
+    margin-bottom: 4px;
+  }
+
+  .plansOneSlider ul li span svg {
+    width: 6px;
+    height: 6px;
+  }
+
+  .plansOneWrapper h3 {
+    font-size: 8px;
+  }
+
+  .plansOneWrapper p {
+    font-size: 6px !important;
+    margin-bottom: 3px !important;
+  }
+
+  .plansOneSlider button {
+    padding: 0px;
+    font-size: 6px;
+  }
+  .plansOneSlider li{
+    gap: 0px !important;
+    font-size: 6px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+      .tab-button-active , .tab-button-inactive{
+        font-size: 8px;
+      }
+
+
+  .customSizeH3,
+  .customSizeP {
+    font-size: 10px !important;
+  }
+
+  .primaryBtn {
+    font-size: 12px;
+  }
+   .plansOneWrapper h4{
+    font-size: 8px !important;
   }
 }

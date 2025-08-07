@@ -73,15 +73,15 @@ export default function SecondSection() {
                         </div>
 
                         {/* Right Side (Boxes grid) */}
-                        <div className="lg:w-3/5 w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div className="lg:w-3/5 w-full grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4">
                             {strategies.map((item, idx) => (
                                 <div
                                     key={idx}
-                                    className="bg-[#191919] rounded-lg px-6 py-5 shadow-md text-white flex flex-col items-start"
+                                    className="bg-[#191919] rounded-lg px-2 sm:px-6 py-3 sm:py-5 shadow-md text-white flex flex-col items-start"
                                 >
-                                    <img src="./images/R-Close Square.png" alt="" className="mb-3 mx-auto" />
-                                    <h3 className="text-lg font-bold mb-1 mx-auto">{item.title}</h3>
-                                    <p className="text-[#898989] text-sm text-center">{item.description}</p>
+                                    <img src="./images/R-Close Square.png" alt="" className="mb-3 mx-auto RCloseImg" />
+                                    <h3 className="text-xs customSizeH3 sm:text-lg font-bold mb-1 mx-auto">{item.title}</h3>
+                                    <p className="text-[#898989] customSizeP text-xs sm:text-sm text-center">{item.description}</p>
                                 </div>
                             ))}
                         </div>

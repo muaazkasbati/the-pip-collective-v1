@@ -13,7 +13,7 @@ export const FooterAbroad = () => {
         transition={{ duration: 0.8 }}
         className="text-white relative container max-w-7xl mx-auto text-center z-10 md:px-0 px-4"
       >
-        <h3 className="text-xl md:text-[48px] font-semibold pb-6 mb-4 relative inline-block mx-auto">
+        <h3 className="text-xl md:text-[48px] font-semibold pb-6 pt-6 md:pt-12 mb-4 relative inline-block mx-auto">
           Join Our Discord Server
         </h3>
         <motion.div

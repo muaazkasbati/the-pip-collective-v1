@@ -120,7 +120,7 @@ export default function PricingSection() {
         variants={fadeUp}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
-        className="max-w-7xl mx-auto text-center rounded-[20px] shadow-[inset_0_0_10px_#ffffff33] sm:px-5 py-10"
+        className="max-w-7xl mx-auto text-center rounded-[20px] shadow-[0_0_10px_#ffffff33] sm:shadow-[inset_0_0_10px_#ffffff33] sm:px-5 py-10"
       >
         <h2 className="text-xl md:text-5xl sm:leading-16 font-bold sm:mb-4 sm:px-0 px-5">
           Select A Plan. Start Trading Smarter.
@@ -131,7 +131,7 @@ export default function PricingSection() {
               src="/images/info-icon.png"
               alt=""
               onClick={toggleTooltip}
-              className="cursor-pointer w-[30px] h-[30px] min-w-[30px] customMarginLeft customMarginBottom"
+              className="cursor-pointer w-[30px] h-[30px] min-w-[30px] customMarginLeft md:block hidden customMarginBottom"
             />
             <div
               className={`
@@ -157,7 +157,7 @@ export default function PricingSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:px-0 px-3 max-w-5xl mx-auto mb-4">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-2 sm:gap-6 sm:px-0 px-3 max-w-5xl mx-auto mb-4">
           {tabs.map((item, idx) =>
             tab === item.value ? (
               <div className="">
@@ -183,7 +183,7 @@ export default function PricingSection() {
             )
           )}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-6 px-3 sm:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto sm:mb-6 px-3 sm:px-0">
           <div><p className="xs:text-[14px] text-[16px]">Flexible Plans: monthly, 6 Month, annual & Lifetimesubscriptions.</p></div>
           <div><p className="xs:text-[14px] text-[16px]">Join Our Partnered Broker & Get FREE Lifetime Access</p></div>
         </div>
@@ -195,7 +195,7 @@ export default function PricingSection() {
               variants={fadeUp}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              className="mt-0 mb-20 px-3 sm:px-0 text-white text-sm font-medium flex flex-wrap justify-center gap-4"
+              className="mt-0 mb-5 sm:mb-20 px-3 sm:px-0 text-white text-sm font-medium flex flex-wrap justify-center gap-4"
             >
               <span className="flex items-center">
                 <span className="w-3 h-3 bg-purple-600 rounded-full mr-2"></span>
@@ -224,22 +224,22 @@ export default function PricingSection() {
             animate={inView ? "visible" : "hidden"}
             className="relative"
           >
-            <div className="sm:px-12 px-3">
+            <div className="md:px-12 sm:px-3 px-1">
               <Swiper
                 modules={[Navigation]}
-                spaceBetween={30}
-                slidesPerView={1}
+                spaceBetween={0}
+                slidesPerView={3}
                 loop
                 breakpoints={{
-                  640: { slidesPerView: 1 },
-                  768: { slidesPerView: 2 },
-                  1024: { slidesPerView: 3 },
+                  640: { slidesPerView: 3, spaceBetween: 8 },
+                  768: { slidesPerView: 2, spaceBetween: 10 },
+                  1024: { slidesPerView: 3, spaceBetween: 30 },
                 }}
                 navigation={{
                   nextEl: ".swiper-button-next",
                   prevEl: ".swiper-button-prev",
                 }}
-                className="pb-12"
+                className="pb-12 plansOneSlider"
               >
                 {plansPaid.map((plan, index) => (
                   <SwiperSlide key={index} className="xl:px-0 py-8">
@@ -250,7 +250,7 @@ export default function PricingSection() {
                       // transition={{ delay: 0.2 + index * 0.2 }}
                       whileHover={{ scale: 1.03 }} // smooth scale on hover
                       transition={{ delay: 0.1 + index * 0.1, type: "spring", stiffness: 300 }}
-                      className="py-8 px-6 sm:px-10 rounded-3xl text-left relative overflow-hidden hover:shadow-[0_0_25px_#fff] hover:cursor-pointer duration-300 bg-[#292929]"
+                      className="py-8 px-6 plansOneWrapper sm:px-10 rounded-3xl text-left relative overflow-hidden hover:shadow-[0_0_25px_#fff] hover:cursor-pointer duration-300 bg-[#292929]"
                     >
                       <h3 className="text-lg font-semibold text-white mb-2 relative z-10">
                         Get INSTANT Access
@@ -290,7 +290,7 @@ export default function PricingSection() {
               </Swiper>
             </div>
 
-            <div className="absolute top-1/3 left-0 right-0 z-50 pt-12 hidden sm:flex justify-between gap-4">
+            <div className="absolute top-1/3 left-0 right-0 z-50 pt-12 hidden md:flex justify-between gap-4">
               <button className="swiper-button-prev h-10 w-10 rounded-full bg-white flex items-center justify-center cursor-pointer">
                 <img src="./images/left.png" alt="Previous" className="mt-0 me-1" />
               </button>
@@ -316,7 +316,7 @@ export default function PricingSection() {
               animate={inView ? "visible" : "hidden"}
               className="flex flex-col md:flex-row justify-center gap-6"
             >
-              <div className="flex lg:flex-row flex-col gap-16 sm:px-0 px-6">
+              <div className="flex lg:flex-row flex-col gap-10 md:gap-16 sm:px-0 px-3">
                 {plansFree.map((plan, index) => (
                   <motion.div
                     key={index}
@@ -324,7 +324,7 @@ export default function PricingSection() {
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
                     transition={{ delay: 0.2 + index * 0.2 }}
-                    className="w-full bg-white/10 py-8 px-6 sm:px-10 rounded-3xl text-left relative overflow-hidden hover:shadow-[0_0_25px_#fff] hover:cursor-pointer duration-300 bg-[#292929]"
+                    className="w-full plansOneWrapper planFree bg-white/10 py-8 px-6 sm:px-10 rounded-3xl text-left relative overflow-hidden hover:shadow-[0_0_25px_#fff] hover:cursor-pointer duration-300 bg-[#292929]"
                   >
                     <h3 className="text-lg font-semibold text-white mb-2 relative z-10">
                       FREE Lifetime Subscription PipCollector EA
@@ -360,7 +360,7 @@ export default function PricingSection() {
                   /> */}
                   </motion.div>
                 ))}
-                <div className="shadow-[0_0_25px_#fff] text-start rounded-3xl py-8 px-6 w-full sm:scale-110">
+                <div className="shadow-[0_0_25px_#fff] plansOneWrapper text-start rounded-3xl py-8 px-6 w-full sm:scale-110">
                   <h2 className="text-[28px] font-bold text-center">Get Started <span className="bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">3 Simple Steps</span></h2>
                   <div className="">
                     <div class="text-white sm:p-6 space-y-6 rounded-lg">
@@ -426,7 +426,7 @@ export default function PricingSection() {
             variants={fadeUp}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            className="mt-10 px-3 sm:px-0 text-white text-sm font-medium flex flex-wrap justify-center gap-4"
+            className="sm:mt-10 px-3 sm:px-0 text-white text-sm font-medium flex flex-wrap justify-center gap-4"
           >
             <span className="flex items-center">
               <span className="w-3 h-3 bg-purple-600 rounded-full mr-2"></span>

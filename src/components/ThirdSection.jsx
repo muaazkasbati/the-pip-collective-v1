@@ -41,30 +41,30 @@ export default function ThirdSection() {
                 className=" text-center shadow-[inset_0_10px_10px_-10px_#ffffff44,_inset_0_-10px_10px_-10px_#ffffff44] pt-10 pb-12 px-4 sm:px-8 md:px-20 rounded-[0px] relative"
             >
                 <div className='relative z-10'>
-                    <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between mb-5">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 xl:w-1/2 xl:order-0 order-1">
+                    <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between mb-2 sm:mb-5">
+                        <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4 xl:w-1/2 xl:order-0 order-1">
                             <div
-                                className="group relative overflow-hidden rounded-2xl bg-[#191919] p-4 sm:p-6 text-start "
+                                className="group relative overflow-hidden rounded-2xl bg-[#191919] p-3 sm:p-6 text-start "
                             >
                                 <div className="flex items-start gap-4 relative z-10">
                                     <div className="">
-                                        <img src="./images/R-Tick Square.png" className='mb-3' alt="" />
+                                        <img src="./images/R-Tick Square.png" className='mb-3 RCloseImg' alt="" />
                                         <div className="">
-                                            <h3 className="text-base sm:text-lg font-bold mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">{`Built on Hedge Fund Logic`}</h3>
-                                            <p className="text-[#fff] text-sm sm:text-base">{`This EA doesn’t guess. It runs on proprietary quant logic—like the systems hedge funds use to scale real capital.`}</p>
+                                            <h3 className="text-sm customSizeH3 sm:text-lg font-bold mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">{`Built on Hedge Fund Logic`}</h3>
+                                            <p className="text-[#fff] customSizeP text-xs sm:text-base">{`This EA doesn’t guess. It runs on proprietary quant logic—like the systems hedge funds use to scale real capital.`}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div
-                                className="group relative overflow-hidden rounded-2xl bg-[#191919] p-4 sm:p-6 text-start "
+                                className="group relative overflow-hidden rounded-2xl bg-[#191919] p-3 sm:p-6 text-start "
                             >
                                 <div className="flex items-start gap-4 relative z-10">
                                     <div className="">
-                                        <img src="./images/R-Tick Square.png" className='mb-3' alt="" />
+                                        <img src="./images/R-Tick Square.png" className='mb-3 RCloseImg' alt="" />
                                         <div className="">
-                                            <h3 className="text-base sm:text-lg font-bold mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">{`Smart, Controlled Risk`}</h3>
-                                            <p className="text-[#fff] text-sm sm:text-base">{`No martingale. No chaos. Every move is disciplined and designed to protect capital—not gamble it.`}</p>
+                                            <h3 className="text-sm customSizeH3 sm:text-lg font-bold mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">{`Smart, Controlled Risk`}</h3>
+                                            <p className="text-[#fff] customSizeP text-xs sm:text-base">{`No martingale. No chaos. Every move is disciplined and designed to protect capital—not gamble it.`}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@ export default function ThirdSection() {
                         </div>
                     </div>
 
-                    <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 w-full">
+                    <div ref={ref} className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-4 gap-2 sm:gap-4 w-full">
                         {features.map((item, idx) => (
                             <FeatureCard key={idx} item={item} idx={idx} inView={inView} />
                         ))}

@@ -214,22 +214,22 @@ export default function FifthSection() {
                   transition={{ delay: 0.2 + index * 0.2 }}
                 >
                   <SwiperSlide className="swiper-slide testimonial-slide transition-opacity duration-300">
-                    <div className="bg-white/10 p-6 sm:p-10 rounded-xl text-left">
+                    <div className="bg-white/10 p-3 sm:p-10 rounded-xl text-left">
                       <div className="flex sm:gap-4 gap-2 items-center mb-4">
                         <div className="w-12 h-12 shrink-0 rounded-full bg-[#A200F5] text-white uppercase text-[20px] font-bold flex items-center justify-center">
                           {/* {generateInitials(testimonial.name)} */}
                           <img src="./images/testi-img.png" className='rounded-full oject-cover w-full h-full' alt="" />
                         </div>
                         <div>
-                          <h3 className="text-[16px] sm:text-[20px] uppercase font-bold text-white">{testimonial.name}</h3>
-                          <p className="text-[14px] sm:text-[16px] text-white">{testimonial.position}</p>
+                          <h3 className="text-[13px] sm:text-[20px] uppercase font-bold text-white">{testimonial.name}</h3>
+                          <p className="text-[11px] sm:text-[16px] text-white">{testimonial.position}</p>
                         </div>
                       </div>
                       {/* <p className="text-white text-[16px] sm:text-[18px]">{testimonial.text}</p> */}
                       <div className={`${isExpanded ? "sm:h-28" : "sm:h-24"}`}>
-                        <h4 className='font-semibold text-[18px] text-[#A200F5] sm:text-[20px]'>Auto Setfile Finder</h4>
+                        <h4 className='font-semibold text-[16px] text-[#A200F5] sm:text-[20px]'>Auto Setfile Finder</h4>
                         <p
-                          className={`text-white text-[14px] sm:text-[16px] overflow-hidden transition-all duration-300 ${!isExpanded
+                          className={`text-white text-[11px] sm:text-[16px] overflow-hidden transition-all duration-300 ${!isExpanded
                             ? '[display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical]'
                             : ''
                             }`}
@@ -240,7 +240,7 @@ export default function FifthSection() {
                         {shouldTruncate && (
                           <button
                             onClick={() => toggleExpand(index)}
-                            className={`text-sm text-[#A200F5] font-medium mt-2 underline cursor-pointer ${isExpanded ? "pb-3" : ""}`}
+                            className={`text-xs sm:text-sm text-[#A200F5] font-medium mt-2 underline cursor-pointer ${isExpanded ? "pb-3" : ""}`}
                           >
                             {isExpanded ? 'See less' : 'See more'}
                           </button>
