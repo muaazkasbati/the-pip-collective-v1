@@ -120,10 +120,10 @@ export default function PricingSection() {
         variants={fadeUp}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
-        className="max-w-7xl mx-auto text-center rounded-[20px] shadow-[0_0_10px_#ffffff33] sm:shadow-[inset_0_0_10px_#ffffff33] sm:px-5 py-10"
+        className="max-w-7xl mx-auto text-center rounded-[20px] shadow-[0_0_10px_#A200F5] sm:shadow-[inset_0_0_10px_#ffffff33] sm:px-5 py-10"
       >
-        <h2 className="text-xl md:text-5xl sm:leading-16 font-bold sm:mb-4 sm:px-0 px-5">
-          Select A Plan. Start Trading Smarter.
+        <h2 className=" text-[24px] sm:text-xl md:text-5xl sm:leading-16 font-bold sm:mb-4 sm:px-0 px-5">
+          Select A Plan. <br />Start Trading Smarter.
         </h2>
         <div className="flex sm:flex-row flex-col items-start gap-0 max-w-4xl mx-auto">
           <div className="relative mt-1 group">
@@ -157,7 +157,7 @@ export default function PricingSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-2 sm:gap-6 sm:px-0 px-3 max-w-5xl mx-auto mb-4">
+        <div className="grid grid-cols-2 gap-4 sm:gap-6 sm:px-0 px-3 max-w-5xl mx-auto sm:mb-4 mb-1">
           {tabs.map((item, idx) =>
             tab === item.value ? (
               <div className="">
@@ -183,34 +183,34 @@ export default function PricingSection() {
             )
           )}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto sm:mb-6 px-3 sm:px-0">
-          <div><p className="xs:text-[14px] text-[16px]">Flexible Plans: monthly, 6 Month, annual & Lifetimesubscriptions.</p></div>
-          <div><p className="xs:text-[14px] text-[16px]">Join Our Partnered Broker & Get FREE Lifetime Access</p></div>
+        <div className="grid grid-cols-2 sm:gap-6 gap-4 max-w-5xl mx-auto sm:mb-6 px-3 sm:px-0">
+          <div><p className="text-[8px] sm:text-[14px] md:text-[16px]">Flexible Plans: monthly, 6 Month, annual & Lifetimesubscriptions.</p></div>
+          <div><p className="text-[8px] sm:text-[14px] md:text-[16px]">Join Our Partnered Broker & Get FREE Lifetime Access</p></div>
         </div>
 
         {tab !== "paid" && (
           <>
-            <h2 className="text-[16px] md:text-4xl sm:leading-12 capitalize font-bold mb-4 sm:px-0 px-4">The Broker sign-up plan requires you to create and fund a LIVE <br className="sm:block hidden" /> account with One Of our partnered brokers</h2>
+            <h2 className="sm:mt-0 mt-4 text-[16px] md:text-4xl sm:leading-12 capitalize font-bold mb-4 sm:px-0 px-4">The Broker sign-up plan requires you to create and fund a LIVE <br className="sm:block hidden" /> account with One Of our partnered brokers</h2>
             <motion.div
               variants={fadeUp}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              className="mt-0 mb-5 sm:mb-20 px-3 sm:px-0 text-white text-sm font-medium flex flex-wrap justify-center gap-4"
+              className="mt-0 mb-5 sm:mb-20 px-3 sm:px-0 text-white text-[6px] sm:text-sm font-medium flex flex-wrap justify-center gap-4"
             >
               <span className="flex items-center">
-                <span className="w-3 h-3 bg-purple-600 rounded-full mr-2"></span>
+                <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
                 No lock-in contracts - cancel anytime
               </span>
               <span className="flex items-center">
-                <span className="w-3 h-3 bg-purple-400 rounded-full mr-2"></span>
+                <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-400 rounded-full mr-2"></span>
                 Trusted by real traders. No gimmicks. No BS
               </span>
               <span className="flex items-center">
-                <span className="w-3 h-3 bg-purple-600 rounded-full mr-2"></span>
+                <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
                 Instant activation - get trading in minutes
               </span>
               <span className="flex items-center">
-                <span className="w-3 h-3 bg-purple-600 rounded-full mr-2"></span>
+                <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
                 Weekly setfile drops - tested & ready to go
               </span>
             </motion.div>
@@ -426,22 +426,22 @@ export default function PricingSection() {
             variants={fadeUp}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            className="sm:mt-10 px-3 sm:px-0 text-white text-sm font-medium flex flex-wrap justify-center gap-4"
+            className="sm:mt-10 px-3 sm:px-0 text-white text-[7px] sm:text-sm font-medium flex flex-wrap justify-center sm:gap-4 gap-2"
           >
             <span className="flex items-center">
-              <span className="w-3 h-3 bg-purple-600 rounded-full mr-2"></span>
+              <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
               No lock-in contracts - cancel anytime
             </span>
             <span className="flex items-center">
-              <span className="w-3 h-3 bg-purple-400 rounded-full mr-2"></span>
+              <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-400 rounded-full mr-2"></span>
               Trusted by real traders. No gimmicks. No BS
             </span>
             <span className="flex items-center">
-              <span className="w-3 h-3 bg-purple-600 rounded-full mr-2"></span>
+              <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
               Instant activation - get trading in minutes
             </span>
             <span className="flex items-center">
-              <span className="w-3 h-3 bg-purple-600 rounded-full mr-2"></span>
+              <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
               Weekly setfile drops - tested & ready to go
             </span>
           </motion.div>

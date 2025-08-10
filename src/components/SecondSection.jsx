@@ -29,7 +29,7 @@ export default function SecondSection() {
 
 
     return (
-        <section id="why-us" className="pt-16 pb-10 px-4 relative" >
+        <section id="why-us" className="sm:pt-16 pt-4 sm:pb-10 pb-4 px-4 relative" >
             <motion.div
                 ref={ref}
                 className="max-w-7xl mx-auto"
@@ -51,15 +51,15 @@ export default function SecondSection() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="mb-8"
+                    className="sm:mb-8 mb-0"
                 >
-                    <span className="text-2xl sm:text-3xl md:text-[60px] font-bold text-white mb-8">Most EAs Blow Accounts.</span>
+                    <span className="text-[24px] sm:text-3xl md:text-[60px] font-bold text-white mb-8">Most EAs Blow Accounts.</span>
                     <br />
                     <span className="bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent text-2xl sm:text-3xl md:text-[30px]">Here’s Why</span>
                 </motion.h2>
 
                 <motion.div className="relative">
-                    <div className="flex flex-col lg:flex-row items-center gap-6 md:mb-0 ">
+                    <div className="flex flex-col lg:flex-row items-center gap-6 md:mb-0 relative z-10">
                         {/* Left Side (Arrow image) */}
                         <div className="lg:w-2/5 w-full flex justify-center">
                             <motion.img
@@ -68,7 +68,7 @@ export default function SecondSection() {
                                 initial={{ opacity: 0, x: -50 }}
                                 animate={{ opacity: 0.5, x: 0 }}
                                 transition={{ delay: 1, duration: 1 }}
-                                className=" lg:hidden block z-10 md:w-150 w-70"
+                                className="lg:hidden sm:block hidden z-10 md:w-150 w-70"
                             />
                         </div>
 
@@ -77,7 +77,7 @@ export default function SecondSection() {
                             {strategies.map((item, idx) => (
                                 <div
                                     key={idx}
-                                    className="bg-[#191919] rounded-lg px-2 sm:px-6 py-3 sm:py-5 shadow-md text-white flex flex-col items-start"
+                                    className="sm:bg-[#191919] bg-white/5 rounded-lg px-2 sm:px-6 py-3 sm:py-5 shadow-md text-white flex flex-col items-start backdrop-blur-md"
                                 >
                                     <img src="./images/R-Close Square.png" alt="" className="mb-3 mx-auto RCloseImg" />
                                     <h3 className="text-xs customSizeH3 sm:text-lg font-bold mb-1 mx-auto">{item.title}</h3>
@@ -86,6 +86,14 @@ export default function SecondSection() {
                             ))}
                         </div>
                     </div>
+                    <motion.img
+                        src="/images/arrow-img.png"
+                        alt=""
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 0.5, x: 0 }}
+                        transition={{ delay: 1, duration: 1 }}
+                        className="sm:hidden block absolute inset-0 z-0 w-full"
+                    />
 
                     {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 z-0">
                         {strategies.map((item, idx) => (
@@ -128,7 +136,7 @@ export default function SecondSection() {
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 0.5, x: 0 }}
                 transition={{ delay: 1, duration: 1 }}
-                className="absolute -bottom-16  right-0 z-10"
+                className="absolute sm:-bottom-16 -bottom-4 right-0 z-10 w-full"
             />
         </section>
     );

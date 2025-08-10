@@ -21,8 +21,8 @@ const FeatureCard = ({ item, idx, inView }) => {
                 <div className="">
                     <img src="./images/R-Tick Square.png" className="mb-3 RCloseImg" alt="" />
                 <div className="">
-                    <h3 className="text-sm customSizeH3 sm:text-lg font-bold mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">{item.title}</h3>
-                    <p className="text-[#fff] customSizeP text-xs sm:text-base">{item.description}</p>
+                    <h3 className="text-[12px] sm:text-lg font-bold mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">{item.title}</h3>
+                    <p className="text-[#fff] text-[10px] sm:text-base">{item.description}</p>
                 </div>
                 </div>
             </div>

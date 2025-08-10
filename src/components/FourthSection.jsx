@@ -123,7 +123,7 @@ export default function FourthSection() {
             <img
               src="/images/mobile-img.png"
               alt="Mobile Trading Screen"
-              className="xl:w-[80%] w-[40%] max-w-sm md:max-w-full"
+              className="xl:w-[80%] sm:w-[40%] w-full max-w-sm md:max-w-full"
             />
           </div>
 
@@ -133,7 +133,7 @@ export default function FourthSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="space-y-6 grid sm:grid-cols-2 xl:grid-cols-1 xl:gap-0 sm:gap-4 relative"
+              className="space-y-6 grid grid-cols-2 xl:grid-cols-1 xl:gap-0 sm:gap-4 gap-1 relative"
             >
               {[0, 1].map((index) => (
                 <motion.div
@@ -142,16 +142,16 @@ export default function FourthSection() {
                   transition={{ duration: 1, ease: "easeOut" }}
                 >
                   <div
-                    className=" bg-[#121212] p-4 rounded-[15px]"
+                    className=" bg-[#121212] sm:p-4 p-2 sm:rounded-[15px] rounded-[5px]"
                     style={{ border: "1px solid #292929" }}
                   >
-                    <div className="">
-                      <h4 className="text-[20px] md:text-[24px] font-bold bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">
+                    <div className="sm:text-center text-left">
+                      <h4 className="text-[12px] sm:text-[20px] md:text-[24px] font-bold bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">
                         {index === 0
                           ? "Smart Entries. Real Edge."
                           : "Verified Results. No Hype."}
                       </h4>
-                      <p className="text-[14px] md:text-[18px] h-[90px] font-light">
+                      <p className="text-[10px] sm:text-[14px] md:text-[18px] sm:h-[90px] font-light">
                         {index === 0
                           ? "No Stacking. No Panic. Just Precise Trades Powered By Quant Logic That Adapts in Real-Time."
                           : "Real Performance. Real Traders. No Chaos. No Gimmicks. Just Consistent Execution And Performance."}
@@ -186,21 +186,21 @@ export default function FourthSection() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="mt-8 mb-12"
+              className="mt-8 sm:mb-12 mb-4"
             >
-              <div className="flex sm:flex-row flex-col justify-center xl:items-center xl:gap-16">
+              <div className="flex flex-row justify-center xl:items-center xl:gap-16 sm:max-w-full max-w-[200px] sm:text-center text-left mx-auto">
                 <div>
-                  <h3 className="text-[28px] xl:text-[30px] text-white font-bold mb-0">
+                  <h3 className="text-[12px] sm:text-[28px] xl:text-[30px] text-white sm:font-bold mb-0">
                     Average Win Rate Using <br className="hidden sm:block" /> The
                     PipCollector
                   </h3>
-                  <h4 className="text-[20px] md:text-[26px] bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent mb-6">
+                  <h4 className="text-[8px] sm:text-[20px] md:text-[26px] bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent mb-6">
                     Powered By PipCore
                   </h4>
                 </div>
 
                 <div className="flex justify-center md:justify-start">
-                  <div ref={circleRef} className="relative w-24 h-24 md:w-32 md:h-32">
+                  <div ref={circleRef} className="relative w-12 sm:w-24 h-12 sm:h-24 md:w-32 md:h-32">
                     <svg className="w-full h-full" viewBox="0 0 36 36">
                       <motion.circle
                         cx="18"

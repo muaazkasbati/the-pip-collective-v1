@@ -32,7 +32,7 @@ export default function ThirdSection() {
     // const imgControllers = useMemo(() => features.map(() => useAnimation()), []);
 
     return (
-        <section id="copy-trade" className="pt-16 pb-0 relative overflow-hidden">
+        <section id="copy-trade" className="sm:pt-16 pt-4 pb-0 relative overflow-hidden">
             <motion.div
                 ref={ref}
                 initial={{ opacity: 0, y: 40 }}
@@ -50,8 +50,8 @@ export default function ThirdSection() {
                                     <div className="">
                                         <img src="./images/R-Tick Square.png" className='mb-3 RCloseImg' alt="" />
                                         <div className="">
-                                            <h3 className="text-sm customSizeH3 sm:text-lg font-bold mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">{`Built on Hedge Fund Logic`}</h3>
-                                            <p className="text-[#fff] customSizeP text-xs sm:text-base">{`This EA doesn’t guess. It runs on proprietary quant logic—like the systems hedge funds use to scale real capital.`}</p>
+                                            <h3 className="text-[12px] sm:text-lg font-bold mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">{`Built on Hedge Fund Logic`}</h3>
+                                            <p className="text-[#fff] text-[10px] sm:text-base">{`This EA doesn’t guess. It runs on proprietary quant logic—like the systems hedge funds use to scale real capital.`}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -63,8 +63,8 @@ export default function ThirdSection() {
                                     <div className="">
                                         <img src="./images/R-Tick Square.png" className='mb-3 RCloseImg' alt="" />
                                         <div className="">
-                                            <h3 className="text-sm customSizeH3 sm:text-lg font-bold mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">{`Smart, Controlled Risk`}</h3>
-                                            <p className="text-[#fff] customSizeP text-xs sm:text-base">{`No martingale. No chaos. Every move is disciplined and designed to protect capital—not gamble it.`}</p>
+                                            <h3 className="text-[12px] sm:text-lg font-bold mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">{`Smart, Controlled Risk`}</h3>
+                                            <p className="text-[#fff] text-[10px] sm:text-base">{`No martingale. No chaos. Every move is disciplined and designed to protect capital—not gamble it.`}</p>
                                         </div>
                                     </div>
                                 </div>

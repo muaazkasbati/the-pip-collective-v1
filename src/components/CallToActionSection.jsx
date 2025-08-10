@@ -5,7 +5,7 @@ import { fadeUp } from './SubscriptionSection';
 
 export default function CallToActionSection() {
   return (
-    <section id="contact-us" className="pt-6 xl:pb-0 lg:pb-20 pb-40 first-section">
+    <section id="contact-us" className="pt-6 xl:pb-0 lg:pb-20 sm:pb-40 pb-8 first-section">
       <div className="relative">
         <motion.div
           variants={fadeUp}
@@ -22,14 +22,14 @@ export default function CallToActionSection() {
           /> */}
 
           <motion.h3
-            className="text-[24px] sm:text-[48px] md:text-[60px] font-extrabold leading-tight mb-4 mt-16"
+            className="text-[18px] sm:text-[48px] md:text-[60px] font-extrabold leading-tight mb-2 sm:mb-4 sm:mt-16 mt-8"
             variants={fadeUp}
           >
             Real Edge. No BS. <br /> Just Trades That Work.
           </motion.h3>
 
           <motion.p
-            className="text-base sm:text-lg md:text-[24px] text-[#898989] mb-6 sm:mb-8"
+            className="text-[10px] sm:text-lg md:text-[24px] text-[#898989] mb-6 sm:mb-8"
             variants={fadeUp}
           >
             The edge you’ve been trying to find — delivered.

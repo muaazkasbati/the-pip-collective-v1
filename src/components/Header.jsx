@@ -12,20 +12,20 @@ export default function Header() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="p-4"
+      className="p-4 absolute top-0 left-0 w-full z-20"
     // style={{position: "absolute", width: "100%",}}
     >
       <div className="flex items-center justify-between text-white container max-w-7xl mx-auto">
         <motion.img
           src="/images/logo.png"
           alt="The Pip Collective Logo"
-          className="w-[150px] md:w-[187px]"
+          className="w-[80px] md:w-[187px]"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         />
 
-        {/* Mobile Menu Toggle */}
-        <button
+
+        {/* <button
           className="md:hidden z-50 text-white"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
@@ -57,7 +57,7 @@ export default function Header() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </motion.svg>
           )}
-        </button>
+        </button> */}
 
         {/* Desktop Navigation */}
         {/* <nav
@@ -79,12 +79,12 @@ export default function Header() {
         </nav> */}
 
         {/* Desktop CTA */}
-        <div className="hidden md:flex items-center space-x-4 text-[18px]">
+        <div className="flex items-center space-x-4 text-[18px]">
           {pathname !== '/welcome_abroad' && pathname !== '/welcome_abroad2' && (
             <motion.a
               href="https://thepipcollective.com/login"
               whileHover={{ scale: 1.05 }}
-              className="hover:text-[#A200F5] font-semibold"
+              className="hover:text-[#A200F5] font-semibold sm:text-[16px] text-[10px]"
             >
               Login
             </motion.a>

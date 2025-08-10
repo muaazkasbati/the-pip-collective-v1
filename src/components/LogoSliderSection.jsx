@@ -10,7 +10,7 @@ export default function LogoSliderSection() {
     const links = ["/images/logo-1-img.png", "/images/logo-3-img.png", "/images/logo-4-img.png", "/images/logo-5-img.png"];
     return (
         <>
-            <section className="pb-16 px-4">
+            <section className="sm:pb-16 pb-4 px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,8 @@ export default function LogoSliderSection() {
                                 spaceBetween={30}
                                 slidesPerView={1}
                                 breakpoints={{
-                                    640: { slidesPerView: 1 },
+                                    360: { slidesPerView: 3 },
+                                    640: { slidesPerView: 3 },
                                     768: { slidesPerView: 2 },
                                     1024: { slidesPerView: 3 },
                                 }}

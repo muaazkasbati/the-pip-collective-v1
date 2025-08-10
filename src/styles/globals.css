@@ -140,12 +140,15 @@ body {
   .glowBgImg {
     top: -20px;
   }
-  .planFree li{
+
+  .planFree li {
     font-size: 10px;
   }
-  .planFree button{
+
+  .planFree button {
     font-size: 9px;
   }
+
   .plansOneSlider .swiper-slide {
     margin-right: 7px !important;
     padding-bottom: 0px !important;
@@ -190,7 +193,9 @@ body {
   .glowBgImg {
     top: 0px;
   }
-  .tab-button-active , .tab-button-inactive{
+
+  .tab-button-active,
+  .tab-button-inactive {
     font-size: 12px;
   }
 
@@ -217,6 +222,7 @@ body {
     margin-right: 10px !important;
     /* 👈 spacing kam karne ke liye */
   }
+
   /* .plansOneSlider .swiper-slide:first-child {
     margin-right: 0px !important;
   } */
@@ -224,15 +230,19 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .tab-button-active , .tab-button-inactive{
+
+  .tab-button-active,
+  .tab-button-inactive {
     font-size: 10px;
     /* padding-block: 5px;
     padding-inline: 5px; */
   }
+
   .plansOneSlider .swiper-slide {
     margin-right: 3px !important;
   }
-   /* .plansOneSlider .swiper-slide:first-child {
+
+  /* .plansOneSlider .swiper-slide:first-child {
     margin-right: 0px !important;
   } */
 
@@ -244,9 +254,11 @@ body {
   .plansOneSlider ul {
     margin-bottom: 5px;
   }
-.plansOneSlider small{
-  font-size: 5px !important;
-}
+
+  .plansOneSlider small {
+    font-size: 5px !important;
+  }
+
   .plansOneSlider ul li {
     font-size: 6px !important;
     margin-bottom: 4px;
@@ -270,16 +282,19 @@ body {
     padding: 0px;
     font-size: 6px;
   }
-  .plansOneSlider li{
+
+  .plansOneSlider li {
     gap: 0px !important;
     font-size: 6px !important;
   }
 }
 
 @media screen and (max-width: 380px) {
-      .tab-button-active , .tab-button-inactive{
-        font-size: 8px;
-      }
+
+  .tab-button-active,
+  .tab-button-inactive {
+    font-size: 8px;
+  }
 
 
   .customSizeH3,
@@ -288,9 +303,12 @@ body {
   }
 
   .primaryBtn {
-    font-size: 12px;
+    font-size: 10px;
+    padding: 10px 12px;
+    font-weight: 500;
   }
-   .plansOneWrapper h4{
+
+  .plansOneWrapper h4 {
     font-size: 8px !important;
   }
 }
