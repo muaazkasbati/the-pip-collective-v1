@@ -55,7 +55,7 @@ const plansPaid = [
       "5 Account Licenses",
       "Step - by - Step Setup Guides",
       "Strategy Education & Training",
-      "Exclusive Access to Discord & Web App",
+      // "Exclusive Access to Discord & Web App",
       "Access to Setfile Finder",
       "Ready to trade setfiles",
       "24 / 7 Customer Support",
@@ -224,7 +224,7 @@ export default function PricingSection() {
             animate={inView ? "visible" : "hidden"}
             className="relative"
           >
-            <div className="md:px-12 sm:px-3 px-1">
+            <div className="md:px-12 sm:px-3 px-1 sm:mb-0 mb-4">
               <Swiper
                 modules={[Navigation]}
                 spaceBetween={0}

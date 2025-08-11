@@ -35,7 +35,7 @@ export default function FirstSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-[30px] sm:text-[36px] lg:text-[70px] sm:leading-15 font-medium sm:mb-4"
+              className="text-[26px] sm:text-[36px] lg:text-[70px] sm:leading-15 font-medium sm:mb-4"
             >
               Trade Like a Hedge Fund
             </motion.h1>
@@ -44,7 +44,7 @@ export default function FirstSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-xl sm:text-3xl md:text-[45px] leading-snug font-light md:mb-6 mb-4 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent"
+              className="text-[16px] sm:text-3xl md:text-[45px] leading-snug font-light md:mb-6 sm:mb-4 mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent"
             >
               Powered by Proprietary Quant Logic
               – <br className='sm:block hidden' /> The Same Logic Hedge Funds Use
@@ -54,7 +54,7 @@ export default function FirstSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="text-[16px] md:text-[22px] font-light mb-8 md:leading-8"
+              className="text-[10px] sm:text-[16px] md:text-[22px] font-light mb-8 md:leading-8"
               style={{ color: "#BABABA" }}
             >
               No martingale. No grid. No ridiculous drawdowns.
@@ -76,7 +76,7 @@ export default function FirstSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="text-xl md:text-[32px] font-extralight mb-8"
+              className="text-[10px] sm:text-xl md:text-[32px] font-extralight sm:mb-8 sm:text-left text-center"
             >
               & Earn $200 just for joining us!
             </motion.p>
@@ -123,7 +123,7 @@ export default function FirstSection() {
           transition={{ delay: 1, duration: 1 }}
           className="absolute top-26 right-4 sm:right-9 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] block"
         />
-        <div className="relative pt-12 sm:pb-12 pb-4 mt-16 sm:mt-24">
+        <div className="relative pt-12 sm:pb-12 pb-4 mt-6 sm:mt-24">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -131,7 +131,7 @@ export default function FirstSection() {
             transition={{ duration: 0.8 }}
             className="text-white relative container max-w-7xl mx-auto text-center z-10 md:px-0 px-4"
           >
-            <h3 className="text-xl md:text-[48px] font-semibold sm:pb-6 pb-2 mb-4 relative inline-block mx-auto">
+            <h3 className="text-[24px] sm:text-xl md:text-[48px] font-semibold sm:pb-6 pb-2 sm:mb-4 mb-2 relative inline-block mx-auto">
               Trade Smarter. Not Harder.
               <span className="absolute bottom-0 sm:right-8 right-4">
                 <svg className="sm:w-[170px] w-[80px] h-auto"  viewBox="0 0 170 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,7 +139,7 @@ export default function FirstSection() {
                 </svg>
               </span>
             </h3>
-            <p className="text-[18px] md:text-[24px] sm:mb-8 mb-0 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">
+            <p className="text-[14px] sm:text-[18px] md:text-[24px] sm:mb-8 mb-0 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">
               One intelligent trade at a time.
               Not 10 over-leveraged guesses.
             </p>
@@ -153,7 +153,7 @@ export default function FirstSection() {
           </motion.div>
           <motion.div
             initial={{ filter: 'drop-shadow(0 -60px 20px #A200F5)', opacity: 0.3 }}
-            animate={{ filter: 'drop-shadow(0 -30px 10px #A200F5)', opacity: 1 }}
+            animate={{ filter: 'drop-shadow(rgb(162, 0, 245) 0px -8px 4px)', opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeOut' }}
             className="w-full object-cover absolute glowBgImg"
           >

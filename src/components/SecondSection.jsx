@@ -77,9 +77,9 @@ export default function SecondSection() {
                             {strategies.map((item, idx) => (
                                 <div
                                     key={idx}
-                                    className="sm:bg-[#191919] bg-white/5 rounded-lg px-2 sm:px-6 py-3 sm:py-5 shadow-md text-white flex flex-col items-start backdrop-blur-md"
+                                    className="sm:bg-[#191919] bg-white/5 rounded-lg px-2 sm:px-6 py-3 sm:py-5 shadow-md text-white flex flex-col items-start backdrop-blur-xs"
                                 >
-                                    <img src="./images/R-Close Square.png" alt="" className="mb-3 mx-auto RCloseImg" />
+                                    <img src="/images/R-Close Square.png" alt="" className="mb-3 mx-auto RCloseImg" />
                                     <h3 className="text-xs customSizeH3 sm:text-lg font-bold mb-1 mx-auto">{item.title}</h3>
                                     <p className="text-[#898989] customSizeP text-xs sm:text-sm text-center">{item.description}</p>
                                 </div>
@@ -92,7 +92,7 @@ export default function SecondSection() {
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 0.5, x: 0 }}
                         transition={{ delay: 1, duration: 1 }}
-                        className="sm:hidden block absolute inset-0 z-0 w-full"
+                        className="sm:hidden block absolute inset-0 z-0 w-[170px] mx-auto"
                     />
 
                     {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 z-0">
