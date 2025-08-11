@@ -13,7 +13,7 @@ export default function ImageBGSection() {
     return (
         <div ref={containerRef} className="w-full overflow-hidden relative h-[100vh]">
             <motion.img
-                src="/images/bg-mobile-img.png"
+                src="/images/mobiles-screens-bg.png"
                 alt="Video thumbnail"
                 style={{ scale }}
                 className="w-full h-full object-cover will-change-transform"
