@@ -19,7 +19,7 @@ export default function Header() {
         <motion.img
           src="/images/logo.png"
           alt="The Pip Collective Logo"
-          className="w-[80px] md:w-[187px]"
+          className="w-[110px] md:w-[187px]"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         />
