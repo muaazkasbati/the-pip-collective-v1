@@ -128,7 +128,7 @@ export default function SecondSection() {
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 0.5, x: 0 }}
                 transition={{ delay: 1, duration: 1 }}
-                className="absolute lg:block hidden md:bottom-0 sm:bottom-55 bottom-150 md:left-0 sm:left-30 z-10 md:w-150 w-70"
+                className="absolute lg:block hidden md:-bottom-24 sm:bottom-55 bottom-150 md:left-0 sm:left-30 z-10 md:w-150 w-70"
             />
             <motion.img
                 src="/images/most-ease-bg-2.png"

@@ -198,7 +198,7 @@ export default function PricingSection() {
               className="mt-0 mb-5 sm:mb-20 px-3 sm:px-0 text-white text-[6px] sm:text-sm font-medium flex flex-wrap justify-center gap-4"
             >
               <span className="flex items-center">
-                <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
+                <span className="sm:w-3 w-1 sm:h-3 h-1 bg-[#A200F5] rounded-full mr-2"></span>
                 No lock-in contracts - cancel anytime
               </span>
               <span className="flex items-center">
@@ -206,11 +206,11 @@ export default function PricingSection() {
                 Trusted by real traders. No gimmicks. No BS
               </span>
               <span className="flex items-center">
-                <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
+                <span className="sm:w-3 w-1 sm:h-3 h-1 bg-[#A200F5] rounded-full mr-2"></span>
                 Instant activation - get trading in minutes
               </span>
               <span className="flex items-center">
-                <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
+                <span className="sm:w-3 w-1 sm:h-3 h-1 bg-[#A200F5] rounded-full mr-2"></span>
                 Weekly setfile drops - tested & ready to go
               </span>
             </motion.div>
@@ -267,7 +267,7 @@ export default function PricingSection() {
                       <ul className="text-white text-sm space-y-3 mb-12 relative z-10">
                         {plan.features.map((feature, i) => (
                           <li key={i} className="flex items-center ">
-                            <span className="text-purple-600 mr-2">
+                            <span className="text-[#A200F5] mr-2">
                               <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.1988 1.86041L6.7664 14.2928C6.69423 14.3651 6.60853 14.4224 6.5142 14.4615C6.41987 14.5006 6.31876 14.5207 6.21665 14.5207C6.11454 14.5207 6.01342 14.5006 5.91909 14.4615C5.82476 14.4224 5.73907 14.3651 5.6669 14.2928L0.227712 8.85365C0.0819106 8.70785 0 8.5101 0 8.30391C0 8.09771 0.0819106 7.89996 0.227712 7.75416C0.373514 7.60836 0.571264 7.52645 0.777459 7.52645C0.983654 7.52645 1.1814 7.60836 1.32721 7.75416L6.21665 12.6446L18.0993 0.760915C18.2451 0.615113 18.4429 0.533203 18.6491 0.533203C18.8553 0.533203 19.053 0.615113 19.1988 0.760915C19.3446 0.906717 19.4265 1.10447 19.4265 1.31066C19.4265 1.51686 19.3446 1.71461 19.1988 1.86041Z" fill="#A200F5" />
                               </svg>
@@ -292,7 +292,7 @@ export default function PricingSection() {
             <div className="md:px-12 sm:px-3 px-1 sm:mb-0 mb-4 sm:hidden block">
               <Swiper
                 modules={[Pagination]}
-                spaceBetween={15}
+                spaceBetween={25}
                 slidesPerView={1.5}
                 centeredSlides={true}
                 breakpoints={{
@@ -310,7 +310,7 @@ export default function PricingSection() {
                 {plansPaid.map((plan, index) => (
                   <SwiperSlide key={index} className="xl:px-0 py-8">
                     <div
-                      className="py-4 px-4 rounded-3xl text-left relative overflow-hidden bg-[#292929]"
+                      className="py-4 px-4 shadow-[0_0_8px_#ffffffff] rounded-3xl text-left relative overflow-hidden bg-[#292929]"
                     >
                       <h3 className="text-[14px] font-semibold text-white mb-2 relative z-10">
                         Get INSTANT Access
@@ -327,7 +327,7 @@ export default function PricingSection() {
                       <ul className="text-white text-[12px] space-y-2 mb-4 relative z-10">
                         {plan.features.map((feature, i) => (
                           <li key={i} className="flex items-center ">
-                            <span className="text-purple-600 mr-2">
+                            <span className="text-[#A200F5] mr-2">
                               <svg width="14" height="100%" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.1988 1.86041L6.7664 14.2928C6.69423 14.3651 6.60853 14.4224 6.5142 14.4615C6.41987 14.5006 6.31876 14.5207 6.21665 14.5207C6.11454 14.5207 6.01342 14.5006 5.91909 14.4615C5.82476 14.4224 5.73907 14.3651 5.6669 14.2928L0.227712 8.85365C0.0819106 8.70785 0 8.5101 0 8.30391C0 8.09771 0.0819106 7.89996 0.227712 7.75416C0.373514 7.60836 0.571264 7.52645 0.777459 7.52645C0.983654 7.52645 1.1814 7.60836 1.32721 7.75416L6.21665 12.6446L18.0993 0.760915C18.2451 0.615113 18.4429 0.533203 18.6491 0.533203C18.8553 0.533203 19.053 0.615113 19.1988 0.760915C19.3446 0.906717 19.4265 1.10447 19.4265 1.31066C19.4265 1.51686 19.3446 1.71461 19.1988 1.86041Z" fill="#A200F5" />
                               </svg>
@@ -401,7 +401,7 @@ export default function PricingSection() {
                     <ul className="text-white text-sm space-y-3  mb-12 relative z-10">
                       {plan.features.map((feature, i) => (
                         <li key={i} className="flex items-center">
-                          <span className="text-purple-600 mr-2">
+                          <span className="text-[#A200F5] mr-2">
                             <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M19.1988 1.86041L6.7664 14.2928C6.69423 14.3651 6.60853 14.4224 6.5142 14.4615C6.41987 14.5006 6.31876 14.5207 6.21665 14.5207C6.11454 14.5207 6.01342 14.5006 5.91909 14.4615C5.82476 14.4224 5.73907 14.3651 5.6669 14.2928L0.227712 8.85365C0.0819106 8.70785 0 8.5101 0 8.30391C0 8.09771 0.0819106 7.89996 0.227712 7.75416C0.373514 7.60836 0.571264 7.52645 0.777459 7.52645C0.983654 7.52645 1.1814 7.60836 1.32721 7.75416L6.21665 12.6446L18.0993 0.760915C18.2451 0.615113 18.4429 0.533203 18.6491 0.533203C18.8553 0.533203 19.053 0.615113 19.1988 0.760915C19.3446 0.906717 19.4265 1.10447 19.4265 1.31066C19.4265 1.51686 19.3446 1.71461 19.1988 1.86041Z" fill="#A200F5" />
                             </svg>
@@ -489,7 +489,7 @@ export default function PricingSection() {
             className="sm:mt-10 px-3 sm:px-0 text-white text-[7px] sm:text-sm font-medium flex flex-wrap justify-center sm:gap-4 gap-2"
           >
             <span className="flex items-center">
-              <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
+              <span className="sm:w-3 w-1 sm:h-3 h-1 bg-[#A200F5] rounded-full mr-2"></span>
               No lock-in contracts - cancel anytime
             </span>
             <span className="flex items-center">
@@ -497,11 +497,11 @@ export default function PricingSection() {
               Trusted by real traders. No gimmicks. No BS
             </span>
             <span className="flex items-center">
-              <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
+              <span className="sm:w-3 w-1 sm:h-3 h-1 bg-[#A200F5] rounded-full mr-2"></span>
               Instant activation - get trading in minutes
             </span>
             <span className="flex items-center">
-              <span className="sm:w-3 w-1 sm:h-3 h-1 bg-purple-600 rounded-full mr-2"></span>
+              <span className="sm:w-3 w-1 sm:h-3 h-1 bg-[#A200F5] rounded-full mr-2"></span>
               Weekly setfile drops - tested & ready to go
             </span>
           </motion.div>

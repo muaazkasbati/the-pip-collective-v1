@@ -35,7 +35,7 @@ export default function FirstSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-[26px] sm:text-[36px] lg:text-[70px] sm:leading-15 font-medium sm:mb-4"
+              className="text-[26px] sm:text-[36px] lg:text-[75px] sm:leading-15 font-bold sm:mb-4"
             >
               Trade Like a Hedge Fund
             </motion.h1>
@@ -44,7 +44,7 @@ export default function FirstSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-[16px] sm:text-3xl md:text-[45px] leading-snug font-light md:mb-6 sm:mb-4 mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent"
+              className="text-[16px] sm:text-3xl md:text-[45px] leading-none pb-2 font-light md:mb-6 sm:mb-4 mb-1 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_48%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent"
             >
               Powered by Proprietary Quant Logic
               – <br className='sm:block hidden' /> The Same Logic Hedge Funds Use
@@ -72,14 +72,14 @@ export default function FirstSection() {
               <Button link href="#" className='primaryBtn'>Unlock Free Lifetime Access</Button>
             </motion.div>
 
-            <motion.p
+            {/* <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
               className="text-[10px] sm:text-xl md:text-[32px] font-extralight sm:mb-8 sm:text-left text-center"
             >
               & Earn $200 just for joining us!
-            </motion.p>
+            </motion.p> */}
           </div>
           <motion.img
             src="/images/planet.png"
@@ -131,13 +131,13 @@ export default function FirstSection() {
             transition={{ duration: 0.8 }}
             className="text-white relative container max-w-7xl mx-auto text-center z-10 md:px-0 px-4"
           >
-            <h3 className="text-[24px] sm:text-xl md:text-[48px] font-semibold sm:pb-6 pb-2 sm:mb-4 mb-2 relative inline-block mx-auto">
+            <h3 className="text-[24px] sm:text-xl md:text-[48px] font-semibold sm:pb-0 pb-0 sm:mb-2 mb-2 relative inline-block mx-auto">
               Trade Smarter. Not Harder.
-              <span className="absolute bottom-0 sm:right-8 right-4">
+              {/* <span className="absolute bottom-0 sm:right-8 right-4">
                 <svg className="sm:w-[170px] w-[80px] h-auto"  viewBox="0 0 170 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.6272 10.8234C11.6272 10.8234 33.5698 12.342 55.5799 11.8147C56.4563 11.8147 56.5538 12.8607 55.2429 12.9326C32.3676 14.1872 1.42548 13.983 1.00974 11.8147C0.537857 11.6882 0.268206 10.0852 1.14457 9.87419C55.9845 0.994412 167.383 -2.73893 169.338 5.7823C172.001 13.1224 87.9041 16.7502 35.963 23.563C28.1094 24.4067 29.5967 22.1108 35.4237 21.1796C67.1634 16.1075 155.215 10.6124 164.417 5.61355C144.463 1.31073 84.4698 3.19165 11.6272 10.8234Z" fill="#fff" />
                 </svg>
-              </span>
+              </span> */}
             </h3>
             <p className="text-[14px] sm:text-[18px] md:text-[24px] sm:mb-8 mb-0 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">
               One intelligent trade at a time.

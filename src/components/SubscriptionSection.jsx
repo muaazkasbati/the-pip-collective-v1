@@ -64,7 +64,7 @@ export default function SubscriptionSection() {
                 "https://docs.google.com/spreadsheets/d/1n8baR8zHTmXPXX4EK0ARgAzZMBdeQojAVlppw6wXEAo/edit?usp=sharing";
             }}
           >
-            <div className='flex flex-row items-center sm:gap-2 gap-x-2'>
+            <div className='flex flex-row items-center justify-center sm:gap-2 gap-x-2'>
               <label htmlFor="name" className="md:text-center text-left inline-block text-white sm:text-[16px] text-[8px] w-auto">
                 Name:
               </label>
@@ -75,7 +75,7 @@ export default function SubscriptionSection() {
                 placeholder="Your Name"
               />
             </div>
-            <div className='flex flex-row items-center sm:gap-2 gap-x-2'>
+            <div className='flex flex-row items-center justify-center sm:gap-2 gap-x-2'>
               <label htmlFor="email" className="md:text-center text-left inline-block text-white sm:text-[16px] text-[8px] w-auto ">
                 Email:
               </label>
@@ -86,12 +86,13 @@ export default function SubscriptionSection() {
                 placeholder="Your Email"
               />
             </div>
-            <div className="sm:w-150 w-full text-center">
+            <div className="w-full text-center">
             <button
               type="submit"
-              className="primaryBtn"
+              className="primaryBtn sm:text-inherit! text-[10px]!"
             >
-              Sign-up!
+              {/* Sign-up! */}
+              Unlock Free Lifetime Access
             </button>
             </div>
           </form>

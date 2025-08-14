@@ -145,13 +145,13 @@ export default function FourthSection() {
                     className=" bg-[#121212] sm:p-4 p-2 sm:rounded-[15px] rounded-[5px]"
                     style={{ border: "1px solid #292929" }}
                   >
-                    <div className="sm:text-center text-left">
+                    <div className="text-left">
                       <h4 className="text-[12px] sm:text-[20px] md:text-[24px] font-bold bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">
                         {index === 0
                           ? "Smart Entries. Real Edge."
                           : "Verified Results. No Hype."}
                       </h4>
-                      <p className="text-[10px] sm:text-[14px] md:text-[18px] sm:h-[90px] font-light">
+                      <p className="text-[10px] sm:text-[14px] md:text-[18px] font-light">
                         {index === 0
                           ? "No Stacking. No Panic. Just Precise Trades Powered By Quant Logic That Adapts in Real-Time."
                           : "Real Performance. Real Traders. No Chaos. No Gimmicks. Just Consistent Execution And Performance."}
@@ -189,8 +189,8 @@ export default function FourthSection() {
               className="mt-8 sm:mb-12 mb-4"
             >
               <div className="flex flex-row justify-center xl:items-center xl:gap-16 sm:max-w-full max-w-[200px] sm:text-center text-left mx-auto">
-                <div>
-                  <h3 className="text-[12px] sm:text-[28px] xl:text-[30px] text-white sm:font-bold mb-0">
+                <div className="text-left">
+                  <h3 className="text-[12px] sm:text-[28px] xl:text-[30px] text-white mb-0">
                     Average Win Rate Using <br className="hidden sm:block" /> The
                     PipCollector
                   </h3>

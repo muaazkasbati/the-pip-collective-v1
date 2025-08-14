@@ -38,7 +38,7 @@ export default function ThirdSection() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8 }}
-                className=" text-center shadow-[inset_0_10px_10px_-10px_#ffffff44,_inset_0_-10px_10px_-10px_#ffffff44] pt-10 pb-12 px-4 sm:px-8 md:px-20 rounded-[0px] relative"
+                className=" text-center shadow-[inset_0_10px_10px_-10px_#ffffff44,_inset_0_-10px_10px_-10px_#ffffff44] pt-22 pb-12 px-4 sm:px-8 md:px-20 rounded-[0px] relative"
             >
                 <div className='relative z-10'>
                     <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between mb-2 sm:mb-5">
@@ -76,7 +76,7 @@ export default function ThirdSection() {
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                                 transition={{ duration: 0.5, delay: 0.2 }}
-                                className="text-3xl sm:text-[38px] md:text-[50px] md:leading-15 font-medium mb-2 text-center xl:text-right"
+                                className="text-[28px] sm:text-[38px] md:text-[50px] md:leading-15 leading-none font-bold mb-2 text-center xl:text-right"
                             >
                                 Why This PipCollector Actually Works
                             </motion.h2>
@@ -84,7 +84,7 @@ export default function ThirdSection() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={inView ? { opacity: 1, y: 0 } : {}}
                                 transition={{ duration: 0.5, delay: 0.3 }}
-                                className="text-2xl sm:text-3xl md:text-[30px] bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent xl:text-right text-center"
+                                className="text-[14px] sm:text-3xl md:text-[30px] bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent xl:text-right text-center"
                             >
                                 Built Different-Built On Quant Logic
                             </motion.h3>
@@ -92,7 +92,7 @@ export default function ThirdSection() {
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={inView ? { opacity: 1, y: 0 } : {}}
                                 transition={{ duration: 0.5, delay: 0.5 }}
-                                className="text-white text-base sm:text-lg mb-8 xl:text-right text-center"
+                                className="text-white text-[10px] sm:text-lg mb-8 xl:text-right text-center"
                             >
                                 No grid. No martingale. No luck.
                             </motion.p>

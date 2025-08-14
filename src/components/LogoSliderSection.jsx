@@ -10,7 +10,7 @@ export default function LogoSliderSection() {
     const links = ["/images/logo-1-img.png", "/images/logo-3-img.png", "/images/logo-4-img.png", "/images/logo-5-img.png"];
     return (
         <>
-            <section className="sm:pb-16 pb-4 px-4">
+            <section className="sm:pb-16 pb-4 md:px-0 px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -27,43 +27,46 @@ export default function LogoSliderSection() {
                                 </svg>
                             </span> */}
                         </h3>
-                        <div className="relative">
-                            <Swiper
-                                modules={[Autoplay]}
-                                spaceBetween={30}
-                                slidesPerView={1}
-                                breakpoints={{
-                                    360: { slidesPerView: 3 },
-                                    640: { slidesPerView: 3 },
-                                    768: { slidesPerView: 2 },
-                                    1024: { slidesPerView: 3 },
-                                }}
-                                loop={true}
-                                speed={2000} // long duration for smoothness
-                                autoplay={{
-                                    delay: 0, // very small delay
-                                    disableOnInteraction: false,
-                                }}
-                                allowTouchMove={false} // optional: disable manual swiping
-                                className="pb-12"
-                            >
+                        <div className="relative before:content-[' '] before:absolute before:-top-10 before:left-0 before:w-full before:h-[10px] before:bg-gradient-to-t before:from-white/10 before:to-transparent">
+                            <p className='sm:text-left max-w-7xl mx-auto mb-2'><span className="bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent text-[10px] sm:text-xl md:text-[30px]">As Seen on</span></p>
+                            <div className="relative">
+                                <Swiper
+                                    modules={[Autoplay]}
+                                    spaceBetween={30}
+                                    slidesPerView={1}
+                                    breakpoints={{
+                                        360: { slidesPerView: 3 },
+                                        640: { slidesPerView: 3 },
+                                        768: { slidesPerView: 2 },
+                                        1024: { slidesPerView: 3 },
+                                    }}
+                                    loop={true}
+                                    speed={2000} // long duration for smoothness
+                                    autoplay={{
+                                        delay: 0, // very small delay
+                                        disableOnInteraction: false,
+                                    }}
+                                    allowTouchMove={false} // optional: disable manual swiping
+                                    className="pb-12"
+                                >
 
-                                {links.map((data, i) => (
-                                    <SwiperSlide key={i}>
-                                        <motion.div
-                                            initial={{ opacity: 0, scale: 0.8 }}
-                                            whileInView={{ opacity: 1, scale: 1 }}
-                                            viewport={{ once: true }}
-                                            transition={{ delay: i * 0.2 }}
-                                            className='flex justify-center items-center'
-                                        >
-                                            <img src={data} alt="" />
-                                        </motion.div>
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper>
-                            <div className="md:block hidden h-full z-10 w-[180px] md:w-[420px] absolute top-0 bg-gradient-to-r from-[#121212] to-transparent"></div>
-                            <div className="md:block hidden h-full z-10 w-[180px] md:w-[420px] absolute top-0 right-0 bg-gradient-to-l from-[#121212] to-transparent"></div>
+                                    {links.map((data, i) => (
+                                        <SwiperSlide key={i}>
+                                            <motion.div
+                                                initial={{ opacity: 0, scale: 0.8 }}
+                                                whileInView={{ opacity: 1, scale: 1 }}
+                                                viewport={{ once: true }}
+                                                transition={{ delay: i * 0.2 }}
+                                                className='flex justify-center items-center'
+                                            >
+                                                <img src={data} alt="" />
+                                            </motion.div>
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
+                                <div className="md:block hidden h-full z-10 w-[180px] md:w-[420px] absolute top-0 bg-gradient-to-r from-[#121212] to-transparent"></div>
+                                <div className="md:block hidden h-full z-10 w-[180px] md:w-[420px] absolute top-0 right-0 bg-gradient-to-l from-[#121212] to-transparent"></div>
+                            </div>
                         </div>
                     </div>
                 </motion.div>

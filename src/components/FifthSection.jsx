@@ -169,7 +169,7 @@ export default function FifthSection() {
           <h2 className="text-[22px] sm:text-4xl md:text-[54px] font-bold text-white">
             Trusted By Traders Worldwide.
           </h2>
-          <h3 className="text-[14px] sm:text-4xl md:text-[36px] sm:leading-16 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent bg-clip-text text-transparent ">
+          <h3 className="text-[14px] sm:text-4xl md:text-[36px] sm:leading-16 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">
             Real Edge. No BS. Just Trades That Work.
           </h3>
           <p className='text-white text-[10px] sm:text-lg mb-10'>

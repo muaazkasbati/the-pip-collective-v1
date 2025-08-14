@@ -11,17 +11,17 @@ export default function ImageBGSection() {
     const scale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
 
     return (
-        <div ref={containerRef} className="w-full overflow-hidden relative h-[100vh]">
+        <div ref={containerRef} className="w-full overflow-hidden relative sm:h-[100vh] h-[30vh]">
             <motion.img
                 src="/images/mobiles-screens-bg.png"
                 alt="Video thumbnail"
                 style={{ scale }}
                 className="w-full h-full object-cover will-change-transform"
             />
-            <div className="h-full w-[180px] md:w-[320px] absolute top-0 bg-gradient-to-r from-[#121212] to-transparent"></div>
-            <div className="h-full w-[180px] md:w-[320px] absolute top-0 right-0 bg-gradient-to-l from-[#121212] to-transparent"></div>
-            <div className="w-full h-[180px] md:h-[320px] absolute top-0 bg-gradient-to-b from-[#121212] to-transparent"></div>
-            <div className="w-full h-[180px] md:h-[320px] absolute bottom-0 bg-gradient-to-b to-[#121212] from-transparent"></div>
+            <div className="h-full w-[180px] md:w-[320px] sm:block hidden absolute top-0 bg-gradient-to-r from-[#121212] to-transparent"></div>
+            <div className="h-full w-[180px] md:w-[320px] sm:block hidden absolute top-0 right-0 bg-gradient-to-l from-[#121212] to-transparent"></div>
+            <div className="w-full h-[180px] md:h-[320px] sm:block hidden absolute top-0 bg-gradient-to-b from-[#121212] to-transparent"></div>
+            <div className="w-full h-[180px] md:h-[320px] sm:block hidden absolute bottom-0 bg-gradient-to-b to-[#121212] from-transparent"></div>
         </div>
     );
 }
