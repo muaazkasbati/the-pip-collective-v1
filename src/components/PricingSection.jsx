@@ -328,7 +328,7 @@ export default function PricingSection() {
                       // transition={{ delay: 0.2 + index * 0.2 }}
                       whileHover={{ scale: 1.03 }} // smooth scale on hover
                       transition={{ delay: 0.1 + index * 0.1, type: "spring", stiffness: 300 }}
-                      className="py-8 px-6 plansOneWrapper sm:px-10 rounded-3xl text-left relative overflow-hidden hover:shadow-[0_0_25px_#fff] hover:cursor-pointer duration-300 bg-[#292929]"
+                      className="py-8 px-6 h-[530px] plansOneWrapper sm:px-10 rounded-3xl text-left relative overflow-hidden hover:shadow-[0_0_25px_#fff] hover:cursor-pointer duration-300 bg-[#292929]"
                     >
                       <h3 className="text-lg font-semibold text-white mb-2 relative z-10">
                         Get INSTANT Access
