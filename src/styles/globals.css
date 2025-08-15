@@ -4,8 +4,10 @@
   .swiper-slide {
     @apply transition-transform duration-300;
   }
-  .swiper-slide-active {
-    @apply scale-110 z-20;
+  @media (max-width: 767px) {
+    .swiper-slide-active {
+      @apply scale-110 z-20;
+    }
   }
 }
 
