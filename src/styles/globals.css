@@ -1,15 +1,14 @@
 @import "tailwindcss";
 
 @layer utilities {
-  .swiper-slide {
+  .mobile-pricing-slider .swiper-slide {
     @apply transition-transform duration-300;
   }
-  @media (max-width: 767px) {
-    .swiper-slide-active {
-      @apply scale-110 z-20;
-    }
+  .mobile-pricing-slider .swiper-slide-active {
+    @apply scale-110 z-20 md:scale-100;
   }
 }
+
 
 
 :root {

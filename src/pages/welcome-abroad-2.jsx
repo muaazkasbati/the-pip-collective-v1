@@ -374,7 +374,7 @@ export default function WelcomAbroad2() {
                     <br className="sm:block hidden" />
                     countries listed above, as our partnered broker does not support them.
                 </p>
-                <p className="text-[8px] sm:text-[20px] leading-tight capitalize mb-4">
+                <p className="text-[8px] sm:text-[20px] leading-tight capitalize mb-8">
                     <b>Prohibited Country List:</b> Afghanistan, Albania, American Samoa, Australia, Belarus, Bermuda, Bosnia and Herzegovina, Burma/Myanmar, Burundi, Canada, Central African Republic, China, Crimea, Cuba, Democratic Republic of the Congo, Eritrea, Former Federal Republic of Yugoslavia, Guam, Iran, Iraq, ISIL (Da’esh) & Al-Qaida & The Taliban, Japan, Lebanon, Libya, Mali, Montenegro, North Korea, Northern Mariana Islands, Puerto Rico, Republic of Guinea, Republic of Guinea-Bissau, Sevastopol, Sierra Leone, Singapore, Somalia, South Sudan, Sudan, Syria, United States of America, United States Virgin Islands, Venezuela, Yemen, Zimbabwe.
                 </p>
             </section>
