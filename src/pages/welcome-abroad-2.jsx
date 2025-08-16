@@ -197,7 +197,7 @@ import { FooterAbroad } from "@/components/FooterAbroad";
 
 export default function WelcomAbroad2() {
     const [isPlaying, setIsPlaying] = useState(false);
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(true);
 
     return (
         <div className="welcomeAbroad">
@@ -394,12 +394,12 @@ export default function WelcomAbroad2() {
             {isModalOpen && (
                 <div className="fixed inset-0 bg-black/80 pt-22 flex items-start justify-center z-50">
                     <div className="bg-white/5 text-center backdrop-blur-2xl shadow-[0_0_8px_rgba(255,255,255,0.5)] p-4 sm:p-12 rounded-[18px] max-w-[300px] sm:max-w-7xl w-full relative">
-                        <button
+                        {/* <button
                             onClick={() => setIsModalOpen(false)}
                             className="absolute top-3 right-3 cursor-pointer"
                         >
                             ✕
-                        </button>
+                        </button> */}
                         <h2 className="text-[14px] sm:text-[24px] md:text-[42px] leading-none font-bold mb-2">
                             Please enter your details below
                         </h2>
@@ -411,8 +411,7 @@ export default function WelcomAbroad2() {
                         <form className="space-y-4"
                             onSubmit={(e) => {
                                 e.preventDefault();
-                                window.location.href =
-                                    "https://docs.google.com/spreadsheets/d/1n8baR8zHTmXPXX4EK0ARgAzZMBdeQojAVlppw6wXEAo/edit?usp=sharing";
+                                setIsModalOpen(false);
                             }}
                         >
                             <div className='flex flex-row items-center justify-center sm:gap-2 gap-x-2'>
@@ -424,6 +423,7 @@ export default function WelcomAbroad2() {
                                     id="name"
                                     className="sm:w-120 w-full sm:px-3 px-1.5 sm:py-2 py-0.5 bg-[#D9D9D9]/5 sm:text-[16px] text-[8px] text-white sm:rounded-[10px] rounded-[4px] placeholder:text-[#cccccc]"
                                     placeholder=""
+                                    required
                                 />
                             </div>
                             <div className='flex flex-row items-center justify-center sm:gap-2 gap-x-2'>
@@ -435,6 +435,7 @@ export default function WelcomAbroad2() {
                                     id="email"
                                     className="sm:w-120 w-full sm:px-3 px-1.5 sm:py-2 py-0.5 bg-[#D9D9D9]/5 sm:text-[16px] text-[8px] text-white sm:rounded-[10px] rounded-[4px] placeholder:text-[#cccccc]"
                                     placeholder=""
+                                    required
                                 />
                             </div>
                             <div className="w-full text-center">
