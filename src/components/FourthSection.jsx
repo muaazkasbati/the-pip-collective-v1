@@ -240,7 +240,7 @@ export default function FourthSection() {
               transition={{ delay: 1.0, duration: 0.6 }}
               className="flex justify-center"
             >
-              <Button className="primaryBtn">Unlock Free Lifetime Access</Button>
+              <Button link href="#pricing" className="primaryBtn">Unlock Free Lifetime Access</Button>
             </motion.div>
           </div>
 

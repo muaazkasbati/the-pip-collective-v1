@@ -67,7 +67,7 @@ const testimonials = [
     id: 5,
     name: "Martin",
     position: "TPC Member",
-    text: "Transparent EA trading with the pip collective. Simple and effective, backed with years of experience and great customer service. 10/10!",
+    text: "Transparent EA trading with ThePipCollective. Simple and effective, backed with years of experience and great customer service. 10/10!",
     image: "/images/testi-img.png",
   },
   {
@@ -217,8 +217,8 @@ export default function FifthSection() {
                     <div className="bg-white/10 p-3 sm:p-10 rounded-xl text-left">
                       <div className="flex sm:gap-4 gap-2 items-center mb-4">
                         <div className="w-12 h-12 shrink-0 rounded-full bg-[#A200F5] text-white uppercase text-[20px] font-bold flex items-center justify-center">
-                          {/* {generateInitials(testimonial.name)} */}
-                          <img src="./images/testi-img.png" className='rounded-full oject-cover w-full h-full' alt="" />
+                          {generateInitials(testimonial.name)}
+                          {/* <img src="./images/testi-img.png" className='rounded-full oject-cover w-full h-full' alt="" /> */}
                         </div>
                         <div>
                           <h3 className="text-[13px] sm:text-[20px] uppercase font-bold text-white">{testimonial.name}</h3>

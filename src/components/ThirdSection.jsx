@@ -7,7 +7,7 @@ const features = [
     {
         title: "Built to Handle Real Accounts",
         description:
-            "This EA doesn’t guess. It runs on proprietary quant logic—like the systems hedge funds use to scale real capital.",
+            "Not just a challenge-passing tool. This EA scales real capital – sustainably with smart logic, not screen-time or overtrading.",
     },
     {
         title: "Streamlined for Real Traders",
@@ -78,7 +78,7 @@ export default function ThirdSection() {
                                 transition={{ duration: 0.5, delay: 0.2 }}
                                 className="text-[28px] sm:text-[38px] md:text-[50px] md:leading-15 leading-none font-bold mb-2 text-center xl:text-right"
                             >
-                                Why This PipCollector Actually Works
+                                Why The PipCollector Actually Works
                             </motion.h2>
                             <motion.h3
                                 initial={{ opacity: 0, y: 20 }}
@@ -111,7 +111,7 @@ export default function ThirdSection() {
                         transition={{ duration: 0.5, delay: 1 }}
                         className="text-white text-base sm:text-lg md:text-[20px] mt-8 mb-8"
                     >
-                        It’s Not Another EA. It’s A System Built To Think And Trade... Like A Hedge Fund.
+                        This isn't your average retail EA. It’s A System Built To Think And Trade... Like A Hedge Fund.
                     </motion.p>
 
                     <motion.div
@@ -119,7 +119,7 @@ export default function ThirdSection() {
                         animate={inView ? { opacity: 1, scale: 1 } : {}}
                         transition={{ duration: 0.5, delay: 1.2 }}
                     >
-                        <Button className='primaryBtn cursor-pointer mb-16'>
+                        <Button link href='#pricing' className='primaryBtn cursor-pointer mb-16'>
                             Ready to Trade Smarter? Unlock It Now
                         </Button>
                     </motion.div>

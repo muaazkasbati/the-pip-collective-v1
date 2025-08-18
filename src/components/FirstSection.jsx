@@ -23,7 +23,7 @@ export default function FirstSection() {
   const opacity = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
   return (
     <>
-      <section ref={sectionRef} className="md:pt-42 pt-20 relative overflow-hidden first-section">
+      <section ref={sectionRef} className="md:pt-42 pt-20 relative overflow-hidden bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/banner-bg.png)' }}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,17 +69,8 @@ export default function FirstSection() {
               // whileTap={{ scale: 0.95 }}
               className="flex flex-col text-center mb-4 max-w-md w-full"
             >
-              <Button link href="#" className='primaryBtn'>Unlock Free Lifetime Access</Button>
+              <Button link href="#pricing" className='primaryBtn'>Unlock Free Lifetime Access</Button>
             </motion.div>
-
-            {/* <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
-              className="text-[10px] sm:text-xl md:text-[32px] font-extralight sm:mb-8 sm:text-left text-center"
-            >
-              & Earn $200 just for joining us!
-            </motion.p> */}
           </div>
           <motion.img
             src="/images/planet.png"
@@ -133,11 +124,6 @@ export default function FirstSection() {
           >
             <h3 className="text-[24px] sm:text-xl md:text-[48px] font-semibold sm:pb-0 pb-0 sm:mb-2 mb-2 relative inline-block mx-auto">
               Trade Smarter. Not Harder.
-              {/* <span className="absolute bottom-0 sm:right-8 right-4">
-                <svg className="sm:w-[170px] w-[80px] h-auto"  viewBox="0 0 170 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.6272 10.8234C11.6272 10.8234 33.5698 12.342 55.5799 11.8147C56.4563 11.8147 56.5538 12.8607 55.2429 12.9326C32.3676 14.1872 1.42548 13.983 1.00974 11.8147C0.537857 11.6882 0.268206 10.0852 1.14457 9.87419C55.9845 0.994412 167.383 -2.73893 169.338 5.7823C172.001 13.1224 87.9041 16.7502 35.963 23.563C28.1094 24.4067 29.5967 22.1108 35.4237 21.1796C67.1634 16.1075 155.215 10.6124 164.417 5.61355C144.463 1.31073 84.4698 3.19165 11.6272 10.8234Z" fill="#fff" />
-                </svg>
-              </span> */}
             </h3>
             <p className="text-[14px] sm:text-[18px] md:text-[24px] sm:mb-8 mb-0 bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">
               One intelligent trade at a time.
@@ -155,129 +141,20 @@ export default function FirstSection() {
             initial={{ filter: 'drop-shadow(0 -60px 20px #A200F5)', opacity: 0.3 }}
             animate={{ filter: 'drop-shadow(rgb(162, 0, 245) 0px -8px 4px)', opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeOut' }}
-            className="w-full object-cover absolute glowBgImg"
+            className="w-full object-cover absolute sm:-top-[60px] xs:-top-[20px] top-0"
           >
-            {/* <div className='w-full'>
-              <img src="./images/banner-bg-3.png" alt="" className='w-full' />
-            </div> */}
             <motion.div
-              initial={{ opacity: 0, y: 100 }} // Start from bottom
-              animate={{ opacity: 1, y: 0 }}   // Animate to original position
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }} 
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="w-full"
             >
               <img src="./images/banner-bg-3.png" alt="" className="w-full" />
             </motion.div>
           </motion.div>
-          {/* <motion.svg
-            initial={{ filter: 'drop-shadow(0 -60px 20px #A200F5)', opacity: 0.3 }}
-            animate={{ filter: 'drop-shadow(0 -30px 10px #A200F5)', opacity: 1 }}
-            transition={{ duration: 1.2, ease: 'easeOut' }}
-            className="w-full h-[150%] sm:h-[200%] object-cover absolute bottom-0"
-            viewBox="0 0 1440 352"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_3754_9003)">
-              <g filter="url(#filter0_d_3754_9003)">
-                <ellipse cx="947.161" cy="346.67" rx="469.024" ry="145.592" transform="rotate(3.98847 947.161 346.67)" fill="#121212" />
-              </g>
-              <g filter="url(#filter1_d_3754_9003)">
-                <ellipse cx="719.525" cy="510.757" rx="828.498" ry="347.618" fill="#121212" />
-              </g>
-              <g filter="url(#filter2_d_3754_9003)">
-                <ellipse cx="719.525" cy="510.757" rx="828.498" ry="347.618" fill="#121212" />
-              </g>
-            </g>
-            <defs>
-              <filter id="filter0_d_3754_9003" x="388.108" y="91.5498" width="1118.11" height="479.889" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dy="-15.1757" />
-                <feGaussianBlur stdDeviation="45.5271" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3754_9003" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3754_9003" result="shape" />
-              </filter>
-              <filter id="filter1_d_3754_9003" x="-346.093" y="-39.8362" width="2131.24" height="1169.48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dy="34.1453" />
-                <feGaussianBlur stdDeviation="118.56" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0.635294 0 0 0 0 0 0 0 0 0 0.960784 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3754_9003" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3754_9003" result="shape" />
-              </filter>
-              <filter id="filter2_d_3754_9003" x="-122.726" y="152.231" width="1684.5" height="722.742" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dy="2.84544" />
-                <feGaussianBlur stdDeviation="6.87649" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3754_9003" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3754_9003" result="shape" />
-              </filter>
-              <clipPath id="clip0_3754_9003">
-                <rect width="1440" height="352" fill="white" />
-              </clipPath>
-            </defs>
-          </motion.svg> */}
-          {/* <svg className="w-full h-[150%] sm:h-[200%] object-cover absolute bottom-0" viewBox="0 0 1440 352" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_3754_9003)">
-              <g filter="url(#filter0_d_3754_9003)">
-                <ellipse cx="947.161" cy="346.67" rx="469.024" ry="145.592" transform="rotate(3.98847 947.161 346.67)" fill="#121212" />
-              </g>
-              <g filter="url(#filter1_d_3754_9003)">
-                <ellipse cx="719.525" cy="510.757" rx="828.498" ry="347.618" fill="#121212" />
-              </g>
-              <g filter="url(#filter2_d_3754_9003)">
-                <ellipse cx="719.525" cy="510.757" rx="828.498" ry="347.618" fill="#121212" />
-              </g>
-            </g>
-            <defs>
-              <filter id="filter0_d_3754_9003" x="388.108" y="91.5498" width="1118.11" height="479.889" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dy="-15.1757" />
-                <feGaussianBlur stdDeviation="45.5271" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3754_9003" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3754_9003" result="shape" />
-              </filter>
-              <filter id="filter1_d_3754_9003" x="-346.093" y="-39.8362" width="2131.24" height="1169.48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dy="34.1453" />
-                <feGaussianBlur stdDeviation="118.56" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0.635294 0 0 0 0 0 0 0 0 0 0.960784 0 0 0 1 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3754_9003" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3754_9003" result="shape" />
-              </filter>
-              <filter id="filter2_d_3754_9003" x="-122.726" y="152.231" width="1684.5" height="722.742" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                <feOffset dy="2.84544" />
-                <feGaussianBlur stdDeviation="6.87649" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3754_9003" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3754_9003" result="shape" />
-              </filter>
-              <clipPath id="clip0_3754_9003">
-                <rect width="1440" height="352" fill="white" />
-              </clipPath>
-            </defs>
-          </svg> */}
+          
         </div>
       </section>
     </>
   );
 }
-
-
-// bg-gradient-to-r [background-image:linear-gradient(to_right,_white_30%,_#A200F5_80%)] bg-clip-text

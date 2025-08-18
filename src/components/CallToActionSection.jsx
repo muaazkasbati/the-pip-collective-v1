@@ -5,7 +5,7 @@ import { fadeUp } from './SubscriptionSection';
 
 export default function CallToActionSection() {
   return (
-    <section id="contact-us" className="pt-6 xl:pb-0 lg:pb-20 sm:pb-40 pb-8 first-section">
+    <section id="contact-us" className="pt-6 xl:pb-0 lg:pb-20 sm:pb-40 pb-8 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/banner-bg.png)' }}>
       <div className="relative">
         <motion.div
           variants={fadeUp}

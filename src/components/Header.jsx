@@ -18,7 +18,7 @@ export default function Header() {
       <div className="flex items-center justify-between text-white container max-w-7xl mx-auto">
         <motion.img
           src="/images/pip-logo.svg"
-          alt="The Pip Collective Logo"
+          alt="ThePipCollective Logo"
           className="w-[130px] md:w-[187px]"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}

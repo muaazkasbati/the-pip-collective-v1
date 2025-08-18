@@ -3,25 +3,45 @@ import Button from './elements/Button';
 
 const faqs = [
   {
-    id: 1,
-    question: "Can I change my subscription plan at any time?",
-    answer: "Absolutely—you can upgrade or downgrade directly from your NexAI dashboard. Prorated billing ensures you only pay for what you use, and changes take effect immediately with no downtime.",
+    "id": 1,
+    "question": "What is an EA?",
+    "answer": "An EA (Expert Advisor) is an automated trading tool that runs on platforms like MT4/MT5. It places, manages, and exits trades based on pre-coded logic - no manual input required."
   },
   {
-    id: 2,
-    question: "Are custom integrations available?",
-    answer: "Yes, we offer custom integrations tailored to your needs. Contact our support team for more details.",
+    "id": 2,
+    "question": "What is a setfile?",
+    "answer": "A setfile is like a strategy blueprint. It tells the EA how to trade - what risk to take, how to enter/exit trades and more"
   },
   {
-    id: 3,
-    question: "What onboarding support does NexAI provide?",
-    answer: "We provide comprehensive onboarding support, including setup assistance and training sessions to get you started.",
+    "id": 3,
+    "question": "What’s the Setfile Finder?",
+    "answer": "Our built-in Setfile Finder matches the best strategy to your account size and drawdown preferences – so you streamline your time testing."
   },
   {
-    id: 4,
-    question: "What are the earning options available?",
-    answer: "NexAI offers multiple earning options, including performance-based earnings and subscription models. Check your dashboard for details.",
+    "id": 4,
+    "question": "Do you provide setfiles?",
+    "answer": "Absolutely - you’ll get regularly updated, optimised setfiles ready to go. But we don’t stop there. We also give you the resources to understand how they work, so you're not just copying, you're learning to trade with real independence."
   },
+  {
+    "id": 5,
+    "question": "How many accounts can I use with the TPC EA?",
+    "answer": "Each subscription includes 5 account licences so you can run on multiple accounts or across different brokers."
+  },
+  {
+    "id": 6,
+    "question": "Does ThePipCollector EA work on MT4 or MT5?",
+    "answer": "MT5 only. The EA is built and tested specifically for MetaTrader 5."
+  },
+  {
+    "id": 7,
+    "question": "Does this work on both live accounts and prop firms?",
+    "answer": "Yes it’s built for both. Built with precision, clean risk parameters and adaptive logic that performs across all trading environments."
+  },
+  {
+    "id": 8,
+    "question": "Is this really free with broker sign-up?",
+    "answer": "Yes - you can unlock lifetime access by signing up through our preferred broker. Don’t want to? Paid plans are available too."
+  }
 ];
 
 import { motion, AnimatePresence } from 'framer-motion';
@@ -56,8 +76,8 @@ export default function FAQSection() {
           </div>
         </div>
       </motion.div>
-        <img src="/images/purple-shadow-bg-101.png" alt="" className='absolute sm:block hidden top-20 md:left-10' />
-        <img src="/images/purple-shadow-bg-102.png" alt="" className='absolute sm:block hidden top-20 md:right-0' />
+      <img src="/images/purple-shadow-bg-101.png" alt="" className='absolute sm:block hidden top-20 md:left-10' />
+      <img src="/images/purple-shadow-bg-102.png" alt="" className='absolute sm:block hidden top-20 md:right-0' />
     </section>
   );
 }

@@ -31,17 +31,19 @@ export default function Button({
     className = "",
     gradient = false
 }) {
-    const clases = `bg-transparent px-6 py-3 font-bold rounded-full border border-[#A200F5] shadow-[1px_0_8px_#A200F5] hover:shadow-[3px_0_12px_#A200F5] transition-all duration-300 ${gradient
-            ? "bg-gradient-to-r [background-image:linear-gradient(to_right,_white_30%,_#A200F5_80%)] bg-clip-text text-transparent"
-            : "text-white"
-        }`
+    // const clases = `bg-transparent px-6 py-3 font-bold rounded-full border border-[#A200F5] shadow-[1px_0_8px_#A200F5] hover:shadow-[3px_0_12px_#A200F5] transition-all duration-300 ${gradient
+    //         ? "bg-gradient-to-r [background-image:linear-gradient(to_right,_white_30%,_#A200F5_80%)] bg-clip-text text-transparent"
+    //         : "text-white"
+    //     }`
+
+    const clases = ``
 
     const MotionEl = motion(link ? Link : "button")
 
     return (
         <MotionEl
             {...(link ? { href } : { onClick })}
-            className={`${clases} ${className}`}
+            className={`${clases} ${className} shadow-[1px_0_8px_#A200F5] hover:shadow-[3px_0_12px_#A200F5] transition-all duration-300`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
         >

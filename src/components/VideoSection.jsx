@@ -6,7 +6,7 @@ export default function VideoSection() {
     const [isPlaying, setIsPlaying] = useState(false)
     return (
         <>
-            <section className="pb-2 px-4">
+            <section className="pb-2 px-4 relative z-20">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ export default function VideoSection() {
                             whileTap={{ scale: 0.95 }}
                             className="flex flex-col mb-4 max-w-md mx-auto w-full"
                         >
-                            <Button link href="#" className='primaryBtn'>Unlock Free Lifetime Access</Button>
+                            <Button link href="#pricing" className='primaryBtn'>Unlock Free Lifetime Access</Button>
                         </motion.div>
                     </div>
                 </motion.div>

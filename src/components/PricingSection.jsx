@@ -57,7 +57,7 @@ const plansPaid = [
       "Strategy Education & Training",
       "Exclusive Access to Discord & Web App",
       "Access to Setfile Finder",
-      "Ready to trade setfiles",
+      // "Ready to trade setfiles",
       "24 / 7 Customer Support",
     ],
     buttonText: "Checkout Now",
@@ -131,7 +131,7 @@ export default function PricingSection() {
               src="/images/info-icon.png"
               alt=""
               onClick={toggleTooltip}
-              className="cursor-pointer w-[30px] h-[30px] min-w-[30px] customMarginLeft md:block hidden customMarginBottom"
+              className="cursor-pointer w-[30px] h-[30px] min-w-[30px] sm:ml-0 ml-[15px] md:block hidden sm:mb-0 mb-[10px]"
             />
             <div
               className={`
@@ -237,7 +237,7 @@ export default function PricingSection() {
                   /> */}
                 </motion.div>
               ))}
-              {/* <div className="shadow-[0_0_25px_#fff] plansOneWrapper text-start rounded-3xl py-8 px-6 w-full sm:scale-110">
+              {/* <div className="shadow-[0_0_25px_#fff] text-start rounded-3xl py-8 px-6 w-full sm:scale-110">
                   <h2 className="text-[28px] font-bold text-center">Get Started <span className="bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent">3 Simple Steps</span></h2>
                   <div className="">
                     <div class="text-white sm:p-6 space-y-6 rounded-lg">
@@ -317,7 +317,7 @@ export default function PricingSection() {
                   nextEl: ".swiper-button-next",
                   prevEl: ".swiper-button-prev",
                 }}
-                className="pb-12 plansOneSlider"
+                className="pb-12"
               >
                 {plansPaid.map((plan, index) => (
                   <SwiperSlide key={index} className="xl:px-0 py-8">
@@ -325,10 +325,9 @@ export default function PricingSection() {
                       variants={fadeUp}
                       initial="hidden"
                       animate={inView ? "visible" : "hidden"}
-                      // transition={{ delay: 0.2 + index * 0.2 }}
                       whileHover={{ scale: 1.03 }} // smooth scale on hover
                       transition={{ delay: 0.1 + index * 0.1, type: "spring", stiffness: 300 }}
-                      className="py-8 px-6 h-[530px] plansOneWrapper sm:px-10 rounded-3xl text-left relative overflow-hidden hover:shadow-[0_0_25px_#fff] hover:cursor-pointer duration-300 bg-[#292929]"
+                      className="py-8 px-6 h-[480px] sm:px-8 rounded-3xl text-left relative overflow-hidden hover:shadow-[0_0_25px_#fff] hover:cursor-pointer duration-300 bg-[#292929]"
                     >
                       <h3 className="text-lg font-semibold text-white mb-2 relative z-10">
                         Get INSTANT Access
@@ -357,11 +356,6 @@ export default function PricingSection() {
                       <button className="border cursor-pointer border-[#A200F5] shadow shadow-[#A200F5] text-white text-md font-medium px-6 py-2 rounded-full w-full relative z-10">
                         {plan.buttonText}
                       </button>
-                      {/* <img
-                        src="/images/bg-purple-shadow-2.png"
-                        alt=""
-                        className="absolute bottom-0 right-0 w-full"
-                      /> */}
                     </motion.div>
                   </SwiperSlide>
                 ))}

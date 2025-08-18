@@ -30,7 +30,7 @@ export default function Footer() {
                 <div className="grid grid-cols-12 sm:gap-8 gap-2">
                     <div className="sm:col-span-6 col-span-5 space-y-4 self-end">
                         <div className="flex items-center">
-                            <img src="/images/logo.png" alt="ThePipCollective Logo" className="w-[50px] sm:w-48" />
+                            <img src="/images/pip-logo.svg" alt="ThePipCollective Logo" className="w-[50px] sm:w-48" />
                         </div>
                         <p className="text-[8px] sm:text-[19px] text-white">
                             Quant-Inspired Trading. Trusted By Traders <br />

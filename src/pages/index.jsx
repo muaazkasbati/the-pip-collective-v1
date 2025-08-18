@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>The Pip Collective</title>
+        <title>ThePipCollective</title>
       </Head>
       <Header />
       <FirstSection />
