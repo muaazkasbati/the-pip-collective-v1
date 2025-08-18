@@ -302,14 +302,15 @@ export default function PricingSection() {
             animate={inView ? "visible" : "hidden"}
             className="relative"
           >
-            <div className="md:px-12 sm:px-3 px-1 sm:mb-0 mb-4 sm:block hidden">
+            <div className="md:px-12 sm:px-3 px-12 sm:mb-0 mb-4 sm:pb-0 pb-12">
               <Swiper
                 modules={[Navigation]}
                 spaceBetween={0}
                 slidesPerView={3}
                 loop
                 breakpoints={{
-                  640: { slidesPerView: 3, spaceBetween: 8 },
+                  320: { slidesPerView: 1, spaceBetween: 8 },
+                  640: { slidesPerView: 1, spaceBetween: 8 },
                   768: { slidesPerView: 2, spaceBetween: 10 },
                   1024: { slidesPerView: 3, spaceBetween: 30 },
                 }}
@@ -327,25 +328,25 @@ export default function PricingSection() {
                       animate={inView ? "visible" : "hidden"}
                       whileHover={{ scale: 1.03 }} // smooth scale on hover
                       transition={{ delay: 0.1 + index * 0.1, type: "spring", stiffness: 300 }}
-                      className="py-8 px-6 h-[480px] sm:px-8 rounded-3xl text-left relative overflow-hidden hover:shadow-[0_0_25px_#fff] hover:cursor-pointer duration-300 bg-[#292929]"
+                      className="sm:py-8 py-4 px-4 lg:h-[480px] md:h-[520px] sm:h-[540px] h-[380px] sm:px-8 rounded-3xl text-left relative overflow-hidden hover:shadow-[0_0_25px_#fff] hover:cursor-pointer duration-300 bg-[#292929]"
                     >
-                      <h3 className="text-lg font-semibold text-white mb-2 relative z-10">
+                      <h3 className="sm:text-[23px] text-[14px] font-semibold text-white mb-2 relative z-10">
                         Get INSTANT Access
                       </h3>
-                      <h4 className="text-md text-white mb-2 relative z-10">
+                      <h4 className="sm:text-[16px] text-[12px] text-white mb-2 relative z-10">
                         {plan.title}
                       </h4>
-                      <p className="text-3xl font-semibold text-white mb-10 relative z-10">
+                      <p className="sm:text-[36px] text-[18px] font-semibold text-white sm:mb-8 mb-6 relative z-10 leading-none">
                         {plan.price}
-                        <small className="text-sm font-semibold">
+                        <small className="sm:text-[16px] text-[12px] font-semibold leading-none">
                           /{plan.priceTime}
                         </small>
                       </p>
-                      <ul className="text-white text-sm space-y-3 mb-12 relative z-10">
+                      <ul className="text-white sm:text-[14px] text-[12px] space-y-3 sm:mb-8 mb-6 relative z-10">
                         {plan.features.map((feature, i) => (
                           <li key={i} className="flex items-center ">
                             <span className="text-[#A200F5] mr-2">
-                              <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg className="sm:w-[20px] w-[14px] h-auto" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19.1988 1.86041L6.7664 14.2928C6.69423 14.3651 6.60853 14.4224 6.5142 14.4615C6.41987 14.5006 6.31876 14.5207 6.21665 14.5207C6.11454 14.5207 6.01342 14.5006 5.91909 14.4615C5.82476 14.4224 5.73907 14.3651 5.6669 14.2928L0.227712 8.85365C0.0819106 8.70785 0 8.5101 0 8.30391C0 8.09771 0.0819106 7.89996 0.227712 7.75416C0.373514 7.60836 0.571264 7.52645 0.777459 7.52645C0.983654 7.52645 1.1814 7.60836 1.32721 7.75416L6.21665 12.6446L18.0993 0.760915C18.2451 0.615113 18.4429 0.533203 18.6491 0.533203C18.8553 0.533203 19.053 0.615113 19.1988 0.760915C19.3446 0.906717 19.4265 1.10447 19.4265 1.31066C19.4265 1.51686 19.3446 1.71461 19.1988 1.86041Z" fill="#A200F5" />
                               </svg>
                             </span>
@@ -353,7 +354,7 @@ export default function PricingSection() {
                           </li>
                         ))}
                       </ul>
-                      <button className="border cursor-pointer border-[#A200F5] shadow shadow-[#A200F5] text-white text-md font-medium px-6 py-2 rounded-full w-full relative z-10">
+                      <button className="border cursor-pointer border-[#A200F5] shadow shadow-[#A200F5] text-white sm:text-[18px] text-[12px] font-medium px-6 py-2 rounded-full w-full relative z-10">
                         {plan.buttonText}
                       </button>
                     </motion.div>
@@ -361,7 +362,7 @@ export default function PricingSection() {
                 ))}
               </Swiper>
             </div>
-            <div className="md:px-12 sm:px-3 px-1 sm:mb-0 mb-4 sm:hidden block mobile-pricing-slider">
+            {/* <div className="md:px-12 sm:px-3 px-1 sm:mb-0 mb-4 sm:hidden block mobile-pricing-slider">
               <Swiper
                 modules={[Pagination]}
                 spaceBetween={25}
@@ -414,18 +415,13 @@ export default function PricingSection() {
                       <button className="border cursor-pointer border-[#A200F5] shadow shadow-[#A200F5] text-white text-[12px] font-medium px-6 py-1.5 rounded-full w-full relative z-10">
                         {plan.buttonText}
                       </button>
-                      {/* <img
-                        src="/images/bg-purple-shadow-2.png"
-                        alt=""
-                        className="absolute bottom-0 right-0 w-full"
-                      /> */}
                     </div>
                   </SwiperSlide>
                 ))}
               </Swiper>
-            </div>
+            </div> */}
 
-            <div className="absolute top-1/3 left-0 right-0 z-50 pt-12 hidden md:flex justify-between gap-4">
+            <div className="absolute sm:top-1/3 sm:bottom-0 bottom-2 left-0 right-0 z-50 pt-12 flex sm:justify-between justify-center gap-4">
               <button className="swiper-button-prev h-10 w-10 rounded-full bg-white flex items-center justify-center cursor-pointer">
                 <img src="./images/left.png" alt="Previous" className="mt-0 me-1" />
               </button>
