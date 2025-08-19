@@ -107,12 +107,12 @@ export default function FirstSection() {
           className="absolute top-0 right-0 z-10"
         />
         <motion.img
-          src="/images/planet.png"
+          src="/images/globe-gif.gif"
           alt=""
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 1, duration: 1 }}
-          className="absolute top-26 right-4 sm:right-9 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] block"
+          className="absolute top-26 right-4 sm:-right-30 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] block"
         />
         <div className="relative pt-12 sm:pb-12 pb-4 mt-12 sm:mt-24">
           <motion.div
