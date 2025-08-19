@@ -41,6 +41,26 @@ const faqs = [
     "id": 8,
     "question": "Is this really free with broker sign-up?",
     "answer": "Yes - you can unlock lifetime access by signing up through our preferred broker. Don’t want to? Paid plans are available too."
+  },
+  {
+    "id": 9,
+    "question": "Is the EA beginner friendly?",
+    "answer": "Yes. If you can follow a setup guide, you can use this EA."
+  },
+  {
+    "id": 10,
+    "question": "Do I need trading experience?",
+    "answer": "No prior experience needed. The EA does the heavy lifting - just follow the setup guide and let the logic handle the trades."
+  },
+  {
+    "id": 11,
+    "question": "Can I cancel anytime?",
+    "answer": "100%. No contracts. No lock-ins. You're in control."
+  },
+  {
+    "id": 12,
+    "question": "Do I need a VPS to run the EA?",
+    "answer": "Yes - for best performance, we recommend using a VPS. It keeps the EA running 24/5 without interruptions, even if your computer is off."
   }
 ];
 
