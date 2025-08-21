@@ -112,7 +112,7 @@ export default function FirstSection() {
           initial={{ x: 50 }}
           animate={{ x: 0 }}
           transition={{ delay: 1, duration: 1 }}
-          className="absolute top-26 right-4 sm:-right-30 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] block lg:opacity-100 xl:opacity-90 md:opacity-70 sm:opacity-50 opacity-20"
+          className="absolute top-18 sm:top-26 -right-20 sm:-right-30 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] block lg:opacity-100 xl:opacity-90 md:opacity-70 sm:opacity-50 opacity-20"
         />
         <div className="relative pt-12 sm:pb-12 pb-4 mt-12 sm:mt-24">
           <motion.div
