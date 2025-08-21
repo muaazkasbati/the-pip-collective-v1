@@ -109,10 +109,10 @@ export default function FirstSection() {
         <motion.img
           src="/images/globe-gif.gif"
           alt=""
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ x: 50 }}
+          animate={{ x: 0 }}
           transition={{ delay: 1, duration: 1 }}
-          className="absolute top-26 right-4 sm:-right-30 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] block"
+          className="absolute top-26 right-4 sm:-right-30 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] block lg:opacity-100 xl:opacity-90 md:opacity-70 sm:opacity-50 opacity-20"
         />
         <div className="relative pt-12 sm:pb-12 pb-4 mt-12 sm:mt-24">
           <motion.div
@@ -132,9 +132,9 @@ export default function FirstSection() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="md:flex hidden flex-col mb-4 max-w-md mx-auto w-full"
+              className="md:flex hidden flex-col mb-4 max-w-lg mx-auto w-full"
             >
-              <Button className='italic cursor-pointer'>Before You Blow Another Account... <span className='underline bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent'>WATCH THIS!</span></Button>
+              <div className='italic cursor-pointer bg-[#121212] text-[18px] text-white rounded-full px-6 py-4 shadow-[0px_0px_10px_-1px_rgba(255,255,255,0.36)]'>Before You Blow Another Account... <span className='underline bg-[linear-gradient(90deg,_rgba(171,_0,_212,_1)_0%,_rgba(129,_27,_192,_1)_23%,_rgba(93,_61,_187,_1)_58%,_rgba(4,_154,_203,_1)_100%)] bg-clip-text text-transparent italic'>WATCH THIS!</span></div>
             </motion.div>
           </motion.div>
           <motion.div

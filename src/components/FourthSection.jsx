@@ -121,7 +121,7 @@ export default function FourthSection() {
         >
           <div className="flex justify-center relative z-10">
             <img
-              src="/images/mobile.gif"
+              src="/images/gif.gif"
               alt="Mobile Trading Screen"
               className="xl:w-[80%] sm:w-[40%] w-full max-w-sm md:max-w-full"
             />
